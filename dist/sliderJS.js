@@ -7,7 +7,7 @@ import { database } from "./database.js";
   const slider = () => {
     const itemDisplay = database.map((item, index) => {
       return `
-			  <a href="./projects?id=${index}" key="${index}" class="swiper-slide relative block" >
+			  <a href="./projects.html?id=${index}" key="${index}" class="swiper-slide relative block" >
 			  <div onclick=" navigate(${index})" class="swiper mySwiper2 swiper-inner" >
 				  <div class="swiper-wrapper brightness-[70%] " >
 					<div class="swiper-slide">
