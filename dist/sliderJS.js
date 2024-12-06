@@ -1,5 +1,5 @@
 import { loadSwipers } from "./sliderPagination.js";
-import { database } from "../public/database.js";
+import { database } from "./database.js";
 
 
 
