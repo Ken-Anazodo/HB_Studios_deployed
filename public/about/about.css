@@ -1,0 +1,552 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body html{
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Cursor */
+.inner-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 2vw;
+	height: 2vw;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 3vw;
+	height: 3vw;
+	transform: translate(-50%, -50%);
+	border: 1px solid #fff;
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: 0.1s;
+}
+
+
+/* Navigation  */
+.nav-sec {
+	font-family: 'Poppins', sans-serif; 
+	font-style: normal;
+	font-weight: 500;
+	transition: ease 0.4s;
+}
+
+.navbar{
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Anton', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+.close-icon{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 300;
+}
+
+.menu-num{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.navImage-display1, .navImage-display2, .navImage-display3{	
+		position: fixed;
+		left: 0;
+		pointer-events: none;
+		transition: transform .1s;
+		transform: rotate(45deg);
+		opacity: 0;
+}
+
+.exploreHead{
+	font-family: 'Anton', sans-serif;
+    font-weight: 500;
+}
+
+.exploreBody{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+/* .navigation::after{
+	content: '';
+	height: 0.8vw;
+	width: 0;
+	background:  rgb(202 138 4);
+	background: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: width 0.5s;
+} */
+
+.navigation:hover::after{
+	width: 100%;
+
+}
+
+#menu-wrapper{
+	transition: 0.6s;
+}
+
+.menuuu{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.menu-icon{
+	transition: color 0.4s linear;
+}
+
+.hb{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.stu{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 800;
+}
+
+.hBs{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
+.welcomex{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.welcomeNav, .noos{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
+
+/* Section1 */
+.one{
+	font-weight: 400;
+	font-family: 'Bodoni Moda', serif;
+}
+
+.hbb{
+	font-weight: 500;
+	font-family: 'Bodoni Moda', serif;
+}
+
+.about{
+	font-family: 'Anton', sans-serif;
+    font-weight: 500;
+}
+
+.styleGen{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.stylG, .view{
+	font-family: 'Bodoni Moda', serif;
+    font-weight: 500;
+}
+
+
+/* Section2 */
+.creative-studio{
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.cse{
+	font-family: 'Libre Bodoni', serif;
+	font-weight: 700;
+}
+
+.studio1{
+	font-weight: 500;
+	font-family: 'Anton', sans-serif;
+}
+
+.elevate{
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+/* .circle{
+	border-radius: 50%;
+
+} */
+
+
+.circleTextAnim{
+	font-family: 'Anton', sans-serif;
+	font-weight: 600;
+	animation: anim 7s linear infinite;
+}
+
+@keyframes anim {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.text span{
+	position: absolute;
+	left: 50%;
+	font-size: 1.2em;
+	transform-origin: 0 100px;
+}
+
+.memorable-brand{
+	font-family: 'Anton', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.craft, .leave{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.a-vision{
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.subHead{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.subHeader{
+	font-kerning: none;
+}
+
+.subBody{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+
+.swiper1 {
+	width: 17vw;
+	height: 24vh;
+	min-height: 24vh;
+  }
+
+.swiper2 {
+	width: 50vw;
+	height: 70vh;
+	min-height: 70vh;
+  }
+
+  .swiper-slide {
+	text-align: center;
+	background: rgb(24 24 27);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+  }
+
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .swiper-pagination-bullet-active{
+	background: white;
+} 
+
+  .autoplay-progress {
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	z-index: 10;
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+  }
+
+  .autoplay-progress svg {
+	--progress: 0;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	stroke-width: 4px;
+	stroke: white;
+	fill: none;
+	stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+	stroke-dasharray: 125.6;
+	transform: rotate(-90deg);
+  }
+
+
+
+
+.welcome{
+	font-family: 'Anton', sans-serif;
+    font-weight: 500;
+}
+
+/* .n{
+	font-family: 'Bodoni Moda', serif;
+} */
+
+.intro{
+	font-weight: 500;
+	font-family: 'Anton', sans-serif;
+}
+
+.profile{
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif; 
+}
+
+.last-name{
+	font-family: 'Anton', sans-serif;
+	font-weight: 500;
+}
+
+.first-name{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 500;
+}
+
+.position{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 600;
+}
+
+.bio-container, .bio-container1{
+	transition: .4s linear .2s;
+	height: 0;
+	display: none;
+	padding: 0;
+}
+
+.bio-container.active, .bio-container1.active{
+	height: 19.5vh;
+	min-height: 19.5vh;
+	display: flex;
+	padding: 1.3vw 0;
+}
+
+.bio{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 500;
+	transition: .3s ease-in-out;
+}
+
+.callToAction{
+	font-family: 'Anton', sans-serif;
+	font-weight: 600;
+}
+
+.create{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 300;
+}
+
+.callToAction1{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 600;
+}
+
+.emoji, .bio-img1, .bio-img2{
+	position: fixed;
+	left: 0;
+	pointer-events: none;
+	transition: transform .1s;
+	transform: rotate(45deg);
+	opacity: 0;
+}
+
+/* .bio-img1, .bio-img2{
+	position: fixed;
+	left: 0;
+	pointer-events: none;
+	transition: transform .1s;
+	transform: rotate(45deg);
+	opacity: 0;
+} */
+
+.viewProject{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	background-color: rgb(30, 30, 30);
+}
+
+
+
+
+
+
+
+/* FOOTER */
+.hbs1{
+	font-family: 'Anton', sans-serif;
+	font-weight: 800;
+}
+
+.footer-nav{
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.newsLet{
+	font-family: 'Bodoni Moda', serif; 
+    font-weight: 400;
+}
+
+.newsLet1{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 200;
+}
+
+.backTop{
+	font-weight: 800;
+}
+
+.madeBy{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+}
+
+
+
+@media screen and (max-width: 1024px){
+	.swiper1 {
+		width: 19vw;
+		height: 160px;
+		min-height: 160px;
+	  }
+	
+	.swiper2 {
+		width: 72vw;
+		height: 550px;
+		min-height: 550px;
+	  }
+
+	.madeBy{
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+	  }
+}
+
+
+
+@media screen and (max-width: 768px){
+
+	.swiper1 {
+		width: 17vw;
+		height: 80px;
+		min-height: 80px;
+	  }
+	
+	.swiper2 {
+		width: 65vw;
+		height: 300px;
+		min-height: 300px;
+	  }
+}
+
+
+
+@media screen and (max-width: 640px){
+	
+	.bio-container.active, .bio-container1.active{
+		height: auto;
+		min-height: auto;
+		display: block;
+		padding: 3vw 5vw;
+	}
+
+	.viewProject{
+		font-weight: 600;
+	}
+
+	.autoplay-progress {
+		width: 30px;
+		height: 30px;
+		font-size: 12px;
+	  }
+}
+
+
+
+/* From Uiverse.io by Fernando-sv */ 
+.loader {
+	border: 4px solid green;
+	border-left-color: transparent;
+	border-radius: 50%;
+  }
+  
+  .loader {
+	border: 4px solid green;
+	border-left-color: transparent;
+	width: 36px;
+	height: 36px;
+  }
+  
+  .loader {
+	border: 4px solid green;
+	border-left-color: transparent;
+	width: 36px;
+	height: 36px;
+	animation: spin89345 1s linear infinite;
+  }
+  
+  @keyframes spin89345 {
+	0% {
+	  transform: rotate(0deg);
+	}
+  
+	100% {
+	  transform: rotate(360deg);
+	}
+  }

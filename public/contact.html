@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<title>Document</title>
+
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="./contact/contact.css">
+</head>
+<body>
+	<section class="pb-[2vw] bg-black h-full text-white">
+		<div>
+			<div class="inner-cursor z-[1000000]"></div>
+			<div class="outer-cursor z-[1000000]"></div>
+		</div>
+
+		<section0 class="relative overflow-hidden h-screen w-full">
+			<div class="nav-sec-container fixed top-0 left-0 z-20 w-full h-[18.5vw] sm:h-[15vw] lg:h-[10vw] xl:h-[6.5vw] bg-blac">
+				<div class="absolute top-0 left-0 h-full w-full bg-black bg-opacity-[30%] backdrop-blur-sm"></div>
+				<div class="absolute nav-sec flex justify-between items-center px-[3vw] text-stone-200 top-0 left-0 w-full h-full">
+					
+					<a href="/index.html">
+						<div class="navConnect iconNav h-[13vw] w-[12vw] sm:h-[12vw] sm:w-[11vw] md:h-[9vw] md:w-[8vw] xl:h-[7vw] xl:w-[6vw] flex items-center">
+							<img src="/assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
+						</div>
+					</a>
+
+					<div class="navConnect hbNav text-center md:text-[1.7vw] md:leading-[2.1vw] xl:text-[1.1vw] xl:leading-[1.2vw] lg:pt-[1vw] xl:pt-0">
+						<div class="[display:none] md:[display:block]">
+							<div class="stu hb ">HEADB0RN</div>
+							<div class="stu md:text-[2.5vw] xl:text-[1.6vw] ">STUDIOS</div>
+						</div>
+						
+						<div class="hBs md:[display:none] text-[4.5vw] leading-[4.5vw] sm:text-[4vw] sm:leading-[4vw]">HBS</div>
+					</div>
+
+					<div>
+						<div class="navConnect menu-icon cursor-pointer text-[3.5vw] md:text-[2vw] xl:text-[1.2vw] text-stone-200 xl:hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
+							<h1 class="menubtn [display:none] md:[display:block]">MENU</h1>
+
+							<div class="md:[display:none] h-[12vw] w-[12vw] sm:h-[12vw] sm:w-[11vw]">
+								<img src="/assets/img/menu.png" class="h-full w-full object-contain" alt=”Image”>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fixed top-[-150vh] left-0 h-screen w-full overflow-auto bg-black z-20" id="menu-wrapper">
+				<!-- <div class="absolute top-0 left-0 z-30 h-full w-full bg-black bg-opacity-[100%] backdrop-blur-sm"></div> -->
+				<nav class="navbar absolute top-0 left-0 h-full w-full  z-40 text-white px-[2vw]">
+
+					<div class="h-[132vw] w-[87vw] md:h-[92vw] md:w-[67vw] lg:h-[52vw] lg:w-[37vw] xl:h-[42vw] xl:w-[27vw] absolute top-[13vh] left-[-2vw]">
+						<img src="/assets/img/statue.png" class="h-full w-full object-cover brightness-63 opacity-[20%]" alt=”left-down arrow”>
+					</div>
+
+					
+					<div class="fixed top-0  left-0 [display:none] justify-between items-center px-[3vw] cursor-pointer w-full h-[18.5vw] sm:h-[15vw] lg:h-[10vw] xl:h-[6.5vw]" id="logoAndClose">
+						<a href="/index.html">
+							<div class="navConnect h-[13vw] w-[12vw] sm:h-[12vw] sm:w-[11vw] md:h-[9vw] md:w-[8vw] xl:h-[7vw] xl:w-[6vw]">
+								<img src="/assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
+							</div>
+						</a>
+
+						<div>
+							<h1 class="navConnect close-icon text-[3.5vw] md:text-[2vw] xl:text-[1.4vw] xl:leading-[1.4vw] uppercase text-white xl:hover:text-[1.7vw] xl:hover:font-bold" onclick="closeMenu()">Close</h1>
+						</div>
+					</div>
+
+					<div class="pt-[20vw] md:pt-[13vw] xl:pt-[6vw] min-h-screen h-screen flex flex-col">
+						<div class="flex flex-col uppercase text-[50px] leading-[52px] sm:text-[80px] sm:leading-[82px] md:text-[7vw] md:leading-[7vw]">
+							<a href="/about.html" data-text="about">
+								<div class="navChild1 navigation relative flex">
+									<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw]">(01)</h1>
+									<div class="menuuu">
+										<h1 class="gNav">About</h1>
+									</div>
+								</div>
+
+								<div class="navImage-display1 min-h-[40vh] h-[40vh] w-[30vw] z-[10000000]">
+									<img src="/assets/img/nezAndCos/img4.jpg" class="h-full w-full object-cover grayscale" alt=”Image”>
+								</div>
+							</a>
+							<hr class="hr">
+
+
+							<a href="/service.html"  data-text="services">
+								<div class="navChild2 flex md:justify-end">
+									<div class="navigation relative mt-[4vw] sm:mt-[5vw] md:mt-[3vw] flex">
+										<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw] md:[display:none]">(02)</h1>
+										<div class="menuuu">
+											<h1 class="gNav">Services</h1>
+										</div>
+										<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw] [display:none] md:block">(02)</h1>
+									</div>
+
+									<div class='iframeCont navImage-display2 h-[40vh] min-h-[40vh] w-[30vw]  z-[10000000]'>
+										<iframe src="https://player.vimeo.com/video/893302984?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+							</a>
+							<hr class="hr">					
+							
+							<a href="/contact.html" data-text="contact">
+								<div class="navChild3 navigation relative mt-[4vw] sm:mt-[5vw] md:mt-[3vw] flex">
+									<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw]">(03)</h1>
+									<div class="menuuu">
+										<h1 class="gNav">Contact</h1>
+									</div>									
+								</div>
+
+								<div class='iframeCont navImage-display3 h-[40vh] min-h-[40vh] w-[30vw]  z-[10000000]'>
+									<!-- <iframe src="/assets/video/vid5.mp4" class='aspect-video h-full w-full brightness-50 grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe> -->
+									<iframe src="https://player.vimeo.com/video/897032294?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[60%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</a>
+							<hr class="hr">
+						</div>
+
+
+						<div class="flex items-end flex-1 md:pb-[3vw] xl:pb-[2vw]">
+							<div class="w-full">
+							<div class="flex justify-between items-end md:block">
+
+							<!-- Circle Texts for Small Screens -->
+							<div class="md:[display:none]">
+								<a href="/index.html#swiperSec">
+									<div class="z-10">
+
+										<div class="circle relative">
+											<div class="circleTextAnim text-stone-40 cursor-pointer">
+												<h1 class="myElement text-[11px] xs:text-[3.7vw] sm:text-[20px]" id="myElement"> * HB STUDIOS * OUR CREATION * OUR CREATION * HB STUDIOS * OUR CREATION</h1>
+											</div>
+
+
+											<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20 hover:hidde">
+												<div class="h-[6.5vw] w-[6.5vw]">
+													<img src="/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</a>
+							</div>													
+
+
+						<div class="mt-[5vw] md:flex justify-between items-end">
+							<div class="md:flex items-center">
+								<div class="flex items-center">
+									<div class="mr-[2vw] xl:mr-[1.5vw]">
+										<div class="relative min-h-[35vw] h-[35vw] w-[24vw] sm:min-h-[26vw] sm:h-[26vw] sm:w-[19vw] md:min-h-[28vw] md:h-[28vw] md:w-[15vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
+											<div>
+												<div class="w-full h-full absolute overflow-hidden transition-all">
+													<img src="/assets/img/prettyboydo/pb5.jpg" class="navImgg h-full w-full object-cover brightness-[60%]" alt=”Image”>
+												</div>
+												<div class="navReveal bg-black absolute h-full w-full z-10"></div>
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<div class="menuu">
+											<div class="gNa exploreHead text-[19px] leading-[21px] w-[23vw] sm:text-[25px] sm:leading-[27px] sm:w-[21vw] md:text-[2.7vw] md:leading-[2.7vw] md:w-[13vw] xl:text-[2.5vw] xl:leading-[2.5vw] xl:w-[12vw] uppercase">Explore HeadBorn Studios</div>
+										</div>
+										<div>
+											<div class="exploreBody text-[13px] leading-[15px] w-[20vw] sm:text-[16px] sm:leading-[18px] sm:w-[14vw] md:text-[1.1vw] md:leading-[1.1vw] md:w-[10vw] xl:text-[0.9vw] xl:leading-[0.9vw] xl:w-[12vw] mt-[2vw] md:mt-[1.5vw]">
+												<div class="[display:none] md:block">You can also enjoy the unique experience that comes with Headborn Studios to your heart's content too.</div>
+												<div class="md:[display:none]">Experience HBS.</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<!-- Circle Texts for Large Screens -->
+								<div class="[display:none] md:block">
+									<a href="/index.html#swiperSec">
+										<div class="z-10">
+											<div class="circle xl:ml-[1.5vw] mr-[1.5vw] xl:mr-0 relative cursor-pointer">
+												<div class="circleTextAnim text-stone-40">
+													<h1 class="text-[11px] xs:text-[3.7vw] sm:text-[20px] md:text-[1.5vw] xl:text-[1.3vw]" id="myElement1"> * HB STUDIOS * OUR CREATION * OUR CREATION * HB STUDIOS * OUR CREATION</h1>
+												</div>
+						
+												<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20">
+													<div class="md:h-[2.5vw] md:w-[2.5vw]">
+														<img src="/assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>								
+							</div>
+
+
+							<div class="flex items-center md:mr-[2vw] xl:mr-[3vw] mt-[3vw] md:mt-0">
+								<div class="mr-[2vw] xl:mr-[1.5vw]">
+									<div class="relative min-h-[35vw] h-[35vw] w-[24vw] sm:min-h-[26vw] sm:h-[26vw] sm:w-[19vw] md:min-h-[28vw] md:h-[28vw] md:w-[15vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
+										<div>
+											<div class="w-full h-full absolute overflow-hidden transition-all">
+												<img src="/assets/img/remy/remy.jpg" class="navImgg1 h-full w-full object-cover  brightness-[60%]" alt=”Image”>
+											</div>
+											<div class="navReveal bg-black absolute h-full w-full z-10"></div>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<div class="menuu exploreHead text-[19px] leading-[21px] w-[20vw] sm:text-[25px] sm:leading-[27px] sm:w-[16vw] md:text-[2.7vw] md:leading-[2.7vw] md:w-[13vw] xl:text-[2.5vw] xl:leading-[2.5vw] xl:w-[12vw] uppercase">
+										<div class="gNa [display:none] md:block">Forging Artists into Icons</div>
+										<div class="gNa md:[display:none]">Forging Icons</div>
+									</div>
+									<div>
+										<div class="exploreBody text-[13px] leading-[15px] w-[20vw] sm:text-[16px] sm:leading-[18px] sm:w-[15vw] md:text-[1.1vw] md:leading-[1.1vw] md:w-[10vw] xl:text-[0.9vw] xl:leading-[0.9vw] xl:w-[12vw] mt-[2vw] md:mt-[1.5vw]">
+											<div class="[display:none] md:block">Enable artists and brands to craft enduring visual narratives that resonate globally within the realms of fashion and lifestyle.</div>
+											<div class="md:[display:none]">Crafting enduring visual narratives.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+				
+
+							<!-- Social Media & Copyrights for Large Screen -->
+							<div class="[display:none] md:block">
+								<div class="mb-[7vw]">
+									<div class="flex justify-between items-center w-[15vw]">
+										<div class="w-[3.5vw] h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<div class="h-[2vw] w-[2vw]">
+												<img src="/assets/img/instagtam.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</div>
+
+										<div class="w-[3.5vw] h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<div class="h-[2vw] w-[2vw]">
+												<img src="/assets/img/twitter.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</div>
+
+										<div class="w-[3.5vw] h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<div class="h-[2vw] w-[2vw]">
+												<img src="/assets/img/mail.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="footer-nav md:text-right text-[1.3vw] leading-[1.4vw] xl:text-[1.1vw] xl:leading-[1.4vw]">
+									<span class='text-[1.2vw]'>©</span>
+									<span>2023 HEADB0RN STUDIOS</span>
+									<div class="uppercase">All Rights Reserved</div>
+								</div>
+							</div>
+						</div>
+						</div>
+
+
+
+
+
+						<!-- Social Media & Copyrights for Small Screen -->
+						<div class="flex items-center justify-between md:[display:none] mt-[5vw] md:mt-[3vw] mb-[2vw]">
+							<div class="footer-nav text-[10px] leading-[10.2px] sm:text-[13px] sm:leading-[13.3px] xl:text-[1.1vw] xl:leading-[1.4vw]">
+								<span class='text-[10.2px] sm:text-[13.3px] xl:text-[1.2vw]'>©</span>
+								<span>2023 HEADB0RN STUDIOS</span>
+								<div class="uppercase">All Rights Reserved</div>
+							</div>
+
+
+							<div class="mb-[7vw">
+								<div class="flex justify-between items-center w-[45vw] xl:w-[15vw]">
+									<div class="h-[6vw] w-[6vw] sm:h-[4.5vw] sm:w-[5vw] xl:w-[3.5vw] xl:h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+										<div class="h-[4vw] w-[4vw] sm:h-[2.5vw] sm:w-[2.5vw] xl:h-[2vw] xl:w-[2vw]">
+											<img src="/assets/img/instagtam.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+										</div>
+									</div>
+
+									<div class="h-[6vw] w-[6vw] sm:h-[4.5vw] sm:w-[5vw] xl:w-[3.5vw] xl:h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+										<div class="h-[4vw] w-[4vw] sm:h-[2.5vw] sm:w-[2.5vw] xl:h-[2vw] xl:w-[2vw]">
+											<img src="/assets/img/twitter.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+										</div>
+									</div>
+
+									<div class="h-[6vw] w-[6vw] sm:h-[4.5vw] sm:w-[5vw] xl:w-[3.5vw] xl:h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+										<div class="h-[4vw] w-[4vw] sm:h-[2.5vw] sm:w-[2.5vw] xl:h-[2vw] xl:w-[2vw]">
+											<img src="/assets/img/mail.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+
+
+
+						</div>						
+					</div>
+				</nav>
+			</div>		
+		</section0>
+
+		
+		<section1 id="beginning">
+			<!-- NAV Narration Display -->
+			<div class="welcomeCont fixed top-[11vh] left-0 w-full justify-center [display:none] z-40">
+				<div class="ml-[1.5vw] w-[30vw] min-h-[12vh] h-[12vh] flex justify-around items-center border-[0.1vw] border-stone-40">
+					<div class="h-[2vw] w-[2vw] mt-[0.5vw]">
+						<img src="/assets/img/logo.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+					</div>
+
+					<div class="welcomex w-[20vw] text-[0.9vw] leading-[1.1vw] text-stone-40 uppercase text-center">
+						<div class="welcomeNav">Welcome to Headborn Studios </div>
+						<div>Enjoy the endless possibilities</div>
+						<div class="noos mt-[0.5vw]">H.B.S</div>
+					</div>
+
+					<div class="h-[2vw] w-[2vw] mt-[0.5vw]">
+						<img src="/assets/img/logo.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+					</div>
+				</div>
+			</div>
+
+			<div class="hmeCont fixed top-[11vh] left-0 w-full [display:none] z-40">					
+					<div class="welcomex ml-[3vw] w-[10vw] text-stone-50 uppercase text-center flex items-center">
+						<div class="h-[2vw] w-[2vw] mr-[1vw]">
+							<img src="/assets/img/rightArrow.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+						</div>
+						<div class="welcomeNav text-[1.1vw]">Home</div>
+					</div>	
+			</div>
+
+			<div class="navContt fixed top-[11vh] right-[2vw] [display:none] z-40">
+				<div class="h-[14vw] w-[24vw]">
+					<img src="/assets/img/nav1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+				</div>
+			</div>
+
+
+
+
+
+			<!-- Body Beginning -->
+
+			<div class="pb-[3.5vw] px-[5vw] xl:px-0 pl-[9vw xl:pl-[9vw] pt-[20vw] xl:pt-[11vh]">
+				<div class="xl:relative [display:none] xl:block">
+					<div class="pt-[2.5vw]">
+						<div class="contact text-[3vw] leading-[3vw] uppercase">
+							<h1>Contacts</h1>
+						</div>
+						
+						<ul class="contact-child text-[1.3vw] leading-[1.3vw] mt-[2.5vw]">
+							<li class="social"><a href="mailto: hbstudiios@gmail.com? subject= subject text">Email</a></li>
+							<li class="social mt-[0.8vw]"><a href="https://www.instagram.com/headb0rnstudi0s/" aria-label='instagram' rel='noopener' target='_blank'>Instagram</a></li>
+							<li class="social mt-[0.8vw]"><a href="#" aria-label='twitter' rel='noopener' target='_blank'>Twitter</a></li>
+						</ul>
+					</div>
+
+
+					<div class="iframeCont min-h-[27vw] h-[27vw] w-[18vw] absolute top-[-1vw] right-[6vw] [display:none] xl:block">
+						<img src="/assets/img/hum.jpg" class="h-full w-full object-cover brightness-[60%] grayscal" alt=”Image”>
+						<!-- <iframe src="https://player.vimeo.com/video/899091231?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[60%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+					</div>
+
+					<!-- <div class="min-h-[51vh] h-[51vh] w-[23vw] absolute top-[-2vw] right-[4vw]">
+						<img src="/assets/img/artiste1.png" class="h-full w-full object-cover grayscale" alt=”Image”>
+					</div> -->
+
+
+					<!-- <div class="min-h-[55vh] h-[55vh] w-[18vw] absolute top-[-5vw] right-[3vw]">
+						<img src="/assets/img/artiste2.png" class="h-full w-full object-cover grayscale" alt=”Image”>
+					</div> -->
+				</div>
+
+				<div>
+					<div class="xl:flex justify-between items-center">
+						<div class="w-[85vw] sm:w-full">
+							<a href="tel:+2349032570511" class="relative sm:flex justify-between items-center">
+								<div class="talk text-[30vw] leading-[26vw] sm:text-[20vw] sm:leading-[16vw] uppercase mt-[4.5vw]">
+									<div>Let's</div>
+									<div>Talk</div> 
+								</div>
+
+								<div class="absolute top-0 left-0 flex items-center xl:[display:none] animate-bounce">
+									<div class="min-h-[35vw] h-[35vw] w-[18vw] sm:min-h-[26vw] sm:h-[26vw] sm:w-[13vw] mt-[3vw]">
+										<img src="/assets/img/emoji.png" class="h-full w-full object-contain brightness-[60% grayscale" alt=”Image”>
+									</div>
+								</div>
+
+								<div class="xl:[display:none] flex justify-end sm:justify-start">
+									<div class="w-[65vw] sm:w-full flex sm:flex-col justify-between sm:justify-start text-[3.2vw] leading-[3.2vw] uppercase mt-[2vw] sm:mt-0 text-center">
+										<a href="mailto: hbstudiios@gmail.com? subject= subject text">
+											<div class="btn-orange">Email</div>
+										</a>
+
+										<a href="https://www.instagram.com/headb0rnstudi0s/" aria-label='instagram' rel='noopener' target='_blank'>
+											<div class="btn-orange">Instagram</div>
+										</a>
+
+										<a href="https://www.twitter.com/headb0rnstudi0s/" aria-label='instagram' rel='noopener' target='_blank'>
+											<div class="btn-orange">Twitter</div>
+										</a>
+									</div>
+								</div>
+							</a>
+
+							
+								<div class="emoji min-h-[25vh] h-[25vh] w-[14vw] z-[10000000]">
+									<img src="/assets/img/emoji.png" class="h-full w-full object-contain brightness-[60% grayscale" alt=”Image”>
+								</div>
+
+							<!--GOT PROPOSAL Small Screen -->
+							<div class="mt-[4vw] flex justify-end xl:[display:none]">
+								<div>
+									<div class="proposal text-[3.3vw] leading-[3.8vw] lg:text-[2.7vw] lg:leading-[3.2vw] w-[55vw] lg:w-[45vw] uppercase text-right">
+										<div>Got a Proposal or Project you have in mind?</div>
+										<div>Feel free to reach out!</div>
+									</div>
+		
+									<div class="flex justify-end">
+										<div class="h-[4vw] w-[4vw] mt-[1.5vw]">
+											<img src="/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+										</div>
+									</div>
+								</div>
+							</div>				
+						</div>
+						
+						<!--GOT PROPOSAL Large Screen -->
+						<div class="[display:none] xl:block">
+							<div class="proposal text-[1.6vw] leading-[1.7vw] w-[25vw] mr-[2vw] uppercase">
+								<div>Got a Proposal or Project you have in mind?</div>
+								<div>Feel free to reach out!</div>
+							</div>
+
+							<div class="h-[2.5vw] w-[2.5vw] mt-[1.2vw]">
+								<img src="/assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="relative flex items-center mt-[5vw] xl:[display:none]">
+						<div class="iframeCont min-h-[90vw] h-[90vw] w-[60vw]">
+							<img src="/assets/img/hum.jpg" class="h-full w-full object-cover brightness-[60%] grayscal" alt=”Image”>
+						</div>
+
+
+						<!-- View Project Small Screen -->
+						<a href="/public/index.html#swiperSec" class="absolute top-[30vw] right-0">
+							<div class="mr-[3vw] sm:mr-[7vw] md:mr-[12vw]">
+								<div class="viewProject rounded-full h-[40vw] w-[40vw] sm:h-[35vw] sm:w-[35vw] md:h-[30vw] md:w-[30vw] text-center uppercase flex justify-around items-center text-[3.1vw] leading-[3.1vw] sm:text-[2.6vw] sm:leading-[2.6vw] animate-bounce hover:animate-none">
+									<div class="h-[4vw] w-[5.5vw] sm:h-[3vw] sm:w-[4.5vw]">
+										<img src="/assets/img/longArrow1.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+
+									<div>
+										<div>View</div>
+										<div>Projects</div>
+									</div>
+
+									<div class="h-[4vw] w-[5.5vw] sm:h-[3vw] sm:w-[4.5vw]">
+										<img src="/assets/img/longArrow.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+
+					
+					<div class="flex justify-between items-center">
+						<div class="hello text-[5.5vw] leading-[5.7vw] sm:text-[4.5vw] sm:leading-[4.7vw] lg:text-[4vw] lg:leading-[4.2vw] xl:text-[1.4vw] xl:leading-[1.4vw] mt-[4vw] sm:mt-[10vw] xl:mt-[3vw]">
+							<div>Say Hello!</div>
+							<div>
+								<div class="mt-[0.5vw]">Let's Chat - Let's Collaborate</div>
+							</div>
+						</div>
+
+						<!-- View Project Large Screen -->
+						<a href="/index.html#swiperSec" class="[display:none] xl:block">
+							<div class="mr-[3vw]">
+								<div class="viewProject rounded-full h-[11vw] w-[11vw] text-center uppercase flex justify-around items-center text-[1vw] leading-[1vw] animate-bounce hover:animate-none">
+									<div class="h-[1.5vw] w-[2vw]">
+										<img src="/assets/img/longArrow1.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+
+									<div>
+										<div>View</div>
+										<div>Projects</div>
+									</div>
+
+									<div class="h-[1.5vw] w-[2vw]">
+										<img src="/assets/img/longArrow.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>					
+				</div>
+			</div>
+		</section1>
+
+					<!-- FOOTER -->
+				<footer>
+					<div class="footer px-[2vw] bg-black text-white">
+						<div>
+							<div class="hbs1 text-[12.5vw] leading-[12vw] uppercase mt-[5vw] sm:mt-[10vw] xl:mt-[3vw] text-center lg:block">
+								HeadB0rn Studios*
+							</div>
+						</div>
+
+						<div class="footer-nav mt-[20vw] sm:mt-[2vw] text-white">
+									
+							<!-- Small Screen -->
+							<div class="sm:[display:none] mb-[20vw]">
+								<div class="h-[11vw] w-[11vw] mb-[6vw]">
+									<img src="/assets/img/hbLogo.jpg" class="h-full w-full object-contain" alt=”left-down arrow”>
+								</div>
+
+								<div class="newsLet text-[5vw] leading-[6vw] w-[80vw] uppercase">
+									<h1>Subscribe to the HB STUDIOS® newsletter to stay up-to-date with the latest releases</h1>          
+								</div>
+
+
+								<div class="mt-[7vw] border-b-[0.3vw] border-white w-[80vw] flex justify-between items-center">
+									<input type="email" name="Email Address" id="newsLetterEmail" placeholder="Email Address" class="newsLet1 w-[60vw] bg-transparent py-[0.4vw] text-[3.5vw] uppercase outline-none">
+
+									<div class="h-[12vw] w-[12vw] submitEmail1" id="submitEmail1">
+										<img src="/assets/img/longArrow.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- Large Screen -->
+							<div class="[display:none] sm:block mb-[3vw] ml-[1vw]">
+								<div class="flex items-center">
+									<div class="h-[4vw] w-[4vw] mb-[2vw] mr-[2vw]">
+										<img src="/assets/img/hbLogo.jpg" class="h-full w-full object-contain" alt=”left-down arrow”>
+									</div>
+
+									<div class="inputCont relative w-[35vw] h-[3.65vw] mr-[1vw]">
+										<input type="email" id="newsLetterEmail1" name="Email Address" placeholder="Enter your Email to Subscribe to our Newsletter" class="newsLet1 h-full w-full border-white border-[0.1vw] bg-transparent px-[1vw] text-[1.2vw] uppercase outline-none">
+									</div>
+
+									<div id="submitEmail" class="submitEmail h-[4vw] w-[4vw] flex justify-center items-center">
+										<img src="/assets/img/cArrow.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="sm:flex justify-around items-center text-[12.5px] sm:text-[1.5vw] lg:text-[1.1vw] uppercase">
+								<div class="w-[20vw] lg:w-[5vw]">
+									<a href="/about.html" data-text="about">
+										<div>About</div>
+									</a>
+
+									<a href="https://www.instagram.com/headb0rnstudi0s/" aria-label='stories' rel='noopener' target='_blank'>
+										<div class="mt-[2.3vw] sm:mt-[1vw] lg:mt-[0.5vw]">Stories</div>
+									</a>
+
+									<a href="/service.html" data-text="service">
+										<div class="mt-[2.3vw] sm:mt-[1vw] lg:mt-[0.5vw]">Services</div>
+									</a>
+
+									<a href="/contact.html" data-text="contact">
+										<div class="mt-[2.3vw] sm:mt-[1vw] lg:mt-[0.5vw]">Contact</div>
+									</a>
+								</div>
+
+								<div class="mt-[3.3vw] sm:mt-0 [display:none] sm:block">
+									<a href="mailto: hbstudiios@gmail.com? subject= subject text">
+										<div class="mt-[2.3vw] sm:mt-[1vw] lg:mt-[0.5vw]">Email</div>
+									</a>
+
+									<a href="https://www.instagram.com/headb0rnstudi0s/" aria-label='instagram' rel='noopener' target='_blank'>
+										<div class="mt-[1.5vw] sm:mt-[1vw] lg:mt-[0.5vw]">Instagram</div>
+									</a>
+
+									<a href="#">
+										<div class="mt-[1.5vw] sm:mt-[1vw] lg:mt-[0.5vw]">Twitter</div>
+									</a>
+								</div>
+
+								<div class="mt-[12vw] sm:[display:none]">
+									<div class="flex justify-between items-center w-[40vw]">
+										<div class="w-[7vw] h-[7vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<a href="https://www.instagram.com/headb0rnstudi0s/" aria-label='instagram' rel='noopener' target='_blank'>
+												<div class="h-[5vw] w-[5vw] md:h-[3vw] md:w-[3vw]">
+													<img src="/assets/img/instagtam.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
+											</a>
+										</div>
+
+										<div class="w-[7vw] h-[7vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<a href="#">
+												<div class="h-[5vw] w-[5vw] md:h-[3vw] md:w-[3vw]">
+													<img src="/assets/img/twitter.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
+											</a>
+										</div>
+										
+										<div class="w-[7vw] h-[7vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<a href="mailto: hbstudiios@gmail.com? subject= subject text">
+												<div class="h-[5vw] w-[5vw] md:h-[3vw] md:w-[3vw]">
+													<img src="/assets/img/mail.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						
+						<div class="flex justify-between items-end sm:block">
+							<!-- Small Screen -->
+							<div class="madeBy text-[14px] leading-[14px] sm:text-[16px] uppercase sm:[display:none] text-whit">
+								<h1>Made by The Clan Chief</h1>
+							</div>
+
+
+							<div class="flex mt-[6vw] sm:mt-[4vw] xl:mt-[3vw] sm:px-[1.7vw]">
+								<div class="sm:flex justify-between items-center w-full">
+									<!-- Large Screen -->
+									<div class="madeBy sm:leading-[14px] sm:text-[16px] xl:text-[1.4vw] uppercase [display:none] sm:block">
+										<div class="flex items-center">
+											<div class="h-[14px] w-[14px] xl:h-[1.3vw] xl:w-[1.3vw] mr-[0.5vw]">
+												<img src="/assets/img/navRoll.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+											<h1>Made by The Clan Chief</h1>
+										</div>
+									</div>
+
+
+
+									<a href="#beginning" data-text="back top">
+										<div class="flex justify-end">
+											<div class="flex items-center justify-center uppercase mt-[1vw] sm:mt-0">
+												<div class="h-[4vw] w-[4vw] sm:h-[2vw] sm:w-[2vw] mr-[1.7vw] sm:mr-[1vw]">
+													<img src="/assets/img/backtop3.png" class="h-full w-full object-cover" alt=”Up arrow”>
+												</div>
+												<h1 class="backTop text-[11.5px] sm:text-[13px] lg:text-[1.3vw] text-white">Back Top</h1>
+											</div>
+										</div>
+									</a>
+
+
+									<div class="text-right text-[10.3px] leading-[10.5px] sm:text-[9px] sm:leading-[9.7px] lg:text-[1.1vw] lg:leading-[1.4vw] mt-[10vw] sm:mt-0">
+										<span class='text-[2.6vw] sm:text-[1.6vw] lg:text-[1.2vw]'>©</span>
+										<span>2023 HEADB0RN STUDIOS</span>
+										<div class="uppercase">All Rights Reserved</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					</div>
+				</footer>
+	</section>
+
+	<!-- CIRCLE TYPE TEXT CDN -->
+	<script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<script src="./contact/contact.js"></script>
+	<script type="module" src="/newsLetter.js"></script>
+</body>
+</html>

@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<title>Document</title>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link href="style.css" rel="stylesheet">
+	<link href="./about/about.css" rel="stylesheet">
+</head>
+<body>
+	<section>
+		<div>
+			<div class="inner-cursor z-[1000000]"></div>
+			<div class="outer-cursor z-[1000000]"></div>
+		</div>
+
+
+		<section class="bg-black text-stone-200 pb-[2vw]">
+			<section0 class="relative overflow-hidden h-screen w-full">
+				<div class="nav-sec-container fixed top-0 left-0 z-20 w-full h-[18.5vw] sm:h-[15vw] lg:h-[10vw] xl:h-[6.5vw] bg-blac">
+					<div class="absolute top-0 left-0 h-full w-full bg-black bg-opacity-[30%] backdrop-blur-sm"></div>
+					<div class="absolute nav-sec flex justify-between items-center px-[3vw] text-stone-200 top-0 left-0 w-full h-full">
+						
+						<a href="./index.html">
+							<div class="navConnect iconNav h-[13vw] w-[12vw] sm:h-[12vw] sm:w-[11vw] md:h-[9vw] md:w-[8vw] xl:h-[7vw] xl:w-[6vw] flex items-center">
+								<img src="./assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
+							</div>
+						</a>
+	
+						<div class="navConnect hbNav text-center md:text-[1.7vw] md:leading-[2.1vw] xl:text-[1.1vw] xl:leading-[1.2vw] lg:pt-[1vw] xl:pt-0">
+							<div class="[display:none] md:[display:block]">
+								<div class="stu hb ">HEADB0RN</div>
+								<div class="stu md:text-[2.5vw] xl:text-[1.6vw] ">STUDIOS</div>
+							</div>
+							
+							<div class="hBs md:[display:none] text-[4.5vw] leading-[4.5vw] sm:text-[4vw] sm:leading-[4vw]">HBS</div>
+						</div>
+	
+						<div>
+							<div class="navConnect menu-icon cursor-pointer text-[3.5vw] md:text-[2vw] xl:text-[1.2vw] text-stone-200 xl:hover:text-[1.6vw] hover:font-bold" id="nav-toggler" onclick="openMenu()">
+								<h1 class="menubtn [display:none] md:[display:block]">MENU</h1>
+	
+								<div class="md:[display:none] h-[12vw] w-[12vw] sm:h-[12vw] sm:w-[11vw]">
+									<img src="./assets/img/menu.png" class="h-full w-full object-contain" alt=”Image”>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="fixed top-[-150vh] left-0 h-screen w-full overflow-auto bg-black z-20" id="menu-wrapper">
+					<!-- <div class="absolute top-0 left-0 z-30 h-full w-full bg-black bg-opacity-[100%] backdrop-blur-sm"></div> -->
+					<nav class="navbar absolute top-0 left-0 h-full w-full  z-40 text-white px-[2vw]">
+
+						<div class="h-[132vw] w-[87vw] md:h-[92vw] md:w-[67vw] lg:h-[52vw] lg:w-[37vw] xl:h-[42vw] xl:w-[27vw] absolute top-[13vh] left-[-2vw]">
+							<img src="./assets/img/statue.png" class="h-full w-full object-cover brightness-63 opacity-[20%]" alt=”left-down arrow”>
+						</div>
+	
+						
+						<div class="fixed top-0  left-0 [display:none] justify-between items-center px-[3vw] cursor-pointer w-full h-[18.5vw] sm:h-[15vw] lg:h-[10vw] xl:h-[6.5vw]" id="logoAndClose">
+							<a href="/index.html">
+								<div class="navConnect h-[13vw] w-[12vw] sm:h-[12vw] sm:w-[11vw] md:h-[9vw] md:w-[8vw] xl:h-[7vw] xl:w-[6vw]">
+									<img src="./assets/img/roll.png" class="h-full w-full object-contain" alt=”Image”>
+								</div>
+							</a>
+	
+							<div>
+								<h1 class="navConnect close-icon text-[3.5vw] md:text-[2vw] xl:text-[1.4vw] xl:leading-[1.4vw] uppercase text-white xl:hover:text-[1.7vw] xl:hover:font-bold" onclick="closeMenu()">Close</h1>
+							</div>
+						</div>
+	
+						<div class="pt-[20vw] md:pt-[13vw] xl:pt-[6vw] min-h-screen h-screen flex flex-col">
+							<div class="flex flex-col uppercase text-[50px] leading-[52px] sm:text-[80px] sm:leading-[82px] md:text-[7vw] md:leading-[7vw]">
+								<a href="/about.html" data-text="about">
+									<div class="navChild1 navigation relative flex">
+										<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw]">(01)</h1>
+										<div class="menuuu">
+											<h1 class="gNav">About</h1>
+										</div>
+									</div>
+	
+									<div class="navImage-display1 min-h-[40vh] h-[40vh] w-[30vw] z-[10000000]">
+										<img src="./assets/img/nezAndCos/img4.jpg" class="h-full w-full object-cover grayscale" alt=”Image”>
+									</div>
+								</a>
+								<hr class="hr">
+	
+	
+								<a href="/service.html"  data-text="services">
+									<div class="navChild2 flex md:justify-end">
+										<div class="navigation relative mt-[4vw] sm:mt-[5vw] md:mt-[3vw] flex">
+											<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw] md:[display:none]">(02)</h1>
+											<div class="menuuu">
+												<h1 class="gNav">Services</h1>
+											</div>
+											<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw] [display:none] md:block">(02)</h1>
+										</div>
+	
+										<div class='iframeCont navImage-display2 h-[40vh] min-h-[40vh] w-[30vw]  z-[10000000]'>
+											<iframe src="https://player.vimeo.com/video/893302984?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+										</div>
+									</div>
+								</a>
+								<hr class="hr">					
+								
+								<a href="/contact.html" data-text="contact">
+									<div class="navChild3 navigation relative mt-[4vw] sm:mt-[5vw] md:mt-[3vw] flex">
+										<h1 class="menu-num text-[2.5vw] leading-[2.5vw] md:text-[1.2vw] md:leading-[1.2vw]">(03)</h1>
+										<div class="menuuu">
+											<h1 class="gNav">Contact</h1>
+										</div>									
+									</div>
+	
+									<div class='iframeCont navImage-display3 h-[40vh] min-h-[40vh] w-[30vw]  z-[10000000]'>
+										<!-- <iframe src="./assets/video/vid5.mp4" class='aspect-video h-full w-full brightness-50 grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" autoPlay loop muted allowfullscreen title="class4"></iframe> -->
+										<iframe src="https://player.vimeo.com/video/897032294?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[60%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</a>
+								<hr class="hr">
+							</div>
+	
+	
+							<div class="flex items-end flex-1 md:pb-[3vw] xl:pb-[2vw]">
+								<div class="w-full">
+								<div class="flex justify-between items-end md:block">
+	
+								<!-- Circle Texts for Small Screens -->
+								<div class="md:[display:none]">
+									<a href="/index.html#swiperSec">
+										<div class="z-10">
+	
+											<div class="circle relative">
+												<div class="circleTextAnim text-stone-40 cursor-pointer">
+													<h1 class="myElement text-[11px] xs:text-[3.7vw] sm:text-[20px]" id="myElement"> * HB STUDIOS * OUR CREATION * OUR CREATION * HB STUDIOS * OUR CREATION</h1>
+												</div>
+	
+	
+												<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20 hover:hidde">
+													<div class="h-[6.5vw] w-[6.5vw]">
+														<img src="./assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+													</div>
+												</div>
+											</div>
+	
+										</div>
+									</a>
+								</div>													
+	
+	
+							<div class="mt-[5vw] md:flex justify-between items-end">
+								<div class="md:flex items-center">
+									<div class="flex items-center">
+										<div class="mr-[2vw] xl:mr-[1.5vw]">
+											<div class="relative min-h-[35vw] h-[35vw] w-[24vw] sm:min-h-[26vw] sm:h-[26vw] sm:w-[19vw] md:min-h-[28vw] md:h-[28vw] md:w-[15vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
+												<div>
+													<div class="w-full h-full absolute overflow-hidden transition-all">
+														<img src="./assets/img/prettyboydo/pb5.jpg" class="navImgg h-full w-full object-cover brightness-[60%]" alt=”Image”>
+													</div>
+													<div class="navReveal bg-black absolute h-full w-full z-10"></div>
+												</div>
+											</div>
+										</div>
+	
+										<div>
+											<div class="menuu">
+												<div class="gNa exploreHead text-[19px] leading-[21px] w-[23vw] sm:text-[25px] sm:leading-[27px] sm:w-[21vw] md:text-[2.7vw] md:leading-[2.7vw] md:w-[13vw] xl:text-[2.5vw] xl:leading-[2.5vw] xl:w-[12vw] uppercase">Explore HeadBorn Studios</div>
+											</div>
+											<div>
+												<div class="exploreBody text-[13px] leading-[15px] w-[20vw] sm:text-[16px] sm:leading-[18px] sm:w-[14vw] md:text-[1.1vw] md:leading-[1.1vw] md:w-[10vw] xl:text-[0.9vw] xl:leading-[0.9vw] xl:w-[12vw] mt-[2vw] md:mt-[1.5vw]">
+													<div class="[display:none] md:block">You can also enjoy the unique experience that comes with Headborn Studios to your heart's content too.</div>
+													<div class="md:[display:none]">Experience HBS.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+	
+	
+									<!-- Circle Texts for Large Screens -->
+									<div class="[display:none] md:block">
+										<a href="/index.html#swiperSec">
+											<div class="z-10">
+												<div class="circle xl:ml-[1.5vw] mr-[1.5vw] xl:mr-0 relative cursor-pointer">
+													<div class="circleTextAnim text-stone-40">
+														<h1 class="text-[11px] xs:text-[3.7vw] sm:text-[20px] md:text-[1.5vw] xl:text-[1.3vw]" id="myElement1"> * HB STUDIOS * OUR CREATION * OUR CREATION * HB STUDIOS * OUR CREATION</h1>
+													</div>
+							
+													<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20">
+														<div class="md:h-[2.5vw] md:w-[2.5vw]">
+															<img src="./assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>								
+								</div>
+	
+	
+								<div class="flex items-center md:mr-[2vw] xl:mr-[3vw] mt-[3vw] md:mt-0">
+									<div class="mr-[2vw] xl:mr-[1.5vw]">
+										<div class="relative min-h-[35vw] h-[35vw] w-[24vw] sm:min-h-[26vw] sm:h-[26vw] sm:w-[19vw] md:min-h-[28vw] md:h-[28vw] md:w-[15vw] xl:min-h-[30vh] xl:h-[30vh] xl:w-[13vw]">
+											<div>
+												<div class="w-full h-full absolute overflow-hidden transition-all">
+													<img src="./assets/img/remy/remy.jpg" class="navImgg1 h-full w-full object-cover  brightness-[60%]" alt=”Image”>
+												</div>
+												<div class="navReveal bg-black absolute h-full w-full z-10"></div>
+											</div>
+										</div>
+									</div>
+	
+									<div>
+										<div class="menuu exploreHead text-[19px] leading-[21px] w-[20vw] sm:text-[25px] sm:leading-[27px] sm:w-[16vw] md:text-[2.7vw] md:leading-[2.7vw] md:w-[13vw] xl:text-[2.5vw] xl:leading-[2.5vw] xl:w-[12vw] uppercase">
+											<div class="gNa [display:none] md:block">Forging Artists into Icons</div>
+											<div class="gNa md:[display:none]">Forging Icons</div>
+										</div>
+										<div>
+											<div class="exploreBody text-[13px] leading-[15px] w-[20vw] sm:text-[16px] sm:leading-[18px] sm:w-[15vw] md:text-[1.1vw] md:leading-[1.1vw] md:w-[10vw] xl:text-[0.9vw] xl:leading-[0.9vw] xl:w-[12vw] mt-[2vw] md:mt-[1.5vw]">
+												<div class="[display:none] md:block">Enable artists and brands to craft enduring visual narratives that resonate globally within the realms of fashion and lifestyle.</div>
+												<div class="md:[display:none]">Crafting enduring visual narratives.</div>
+											</div>
+										</div>
+									</div>
+								</div>
+					
+	
+								<!-- Social Media & Copyrights for Large Screen -->
+								<div class="[display:none] md:block">
+									<div class="mb-[7vw]">
+										<div class="flex justify-between items-center w-[15vw]">
+											<div class="w-[3.5vw] h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+												<div class="h-[2vw] w-[2vw]">
+													<img src="./assets/img/instagtam.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
+											</div>
+	
+											<div class="w-[3.5vw] h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+												<div class="h-[2vw] w-[2vw]">
+													<img src="./assets/img/twitter.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
+											</div>
+	
+											<div class="w-[3.5vw] h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+												<div class="h-[2vw] w-[2vw]">
+													<img src="./assets/img/mail.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+												</div>
+											</div>
+										</div>
+									</div>
+	
+	
+									<div class="footer-nav md:text-right text-[1.3vw] leading-[1.4vw] xl:text-[1.1vw] xl:leading-[1.4vw]">
+										<span class='text-[1.2vw]'>©</span>
+										<span>2023 HEADB0RN STUDIOS</span>
+										<div class="uppercase">All Rights Reserved</div>
+									</div>
+								</div>
+							</div>
+							</div>
+	
+	
+	
+	
+	
+							<!-- Social Media & Copyrights for Small Screen -->
+							<div class="flex items-center justify-between md:[display:none] mt-[5vw] md:mt-[3vw] mb-[2vw]">
+								<div class="footer-nav text-[10px] leading-[10.2px] sm:text-[13px] sm:leading-[13.3px] xl:text-[1.1vw] xl:leading-[1.4vw]">
+									<span class='text-[10.2px] sm:text-[13.3px] xl:text-[1.2vw]'>©</span>
+									<span>2023 HEADB0RN STUDIOS</span>
+									<div class="uppercase">All Rights Reserved</div>
+								</div>
+	
+	
+								<div class="mb-[7vw">
+									<div class="flex justify-between items-center w-[45vw] xl:w-[15vw]">
+										<div class="h-[6vw] w-[6vw] sm:h-[4.5vw] sm:w-[5vw] xl:w-[3.5vw] xl:h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<div class="h-[4vw] w-[4vw] sm:h-[2.5vw] sm:w-[2.5vw] xl:h-[2vw] xl:w-[2vw]">
+												<img src="./assets/img/instagtam.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</div>
+	
+										<div class="h-[6vw] w-[6vw] sm:h-[4.5vw] sm:w-[5vw] xl:w-[3.5vw] xl:h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<div class="h-[4vw] w-[4vw] sm:h-[2.5vw] sm:w-[2.5vw] xl:h-[2vw] xl:w-[2vw]">
+												<img src="./assets/img/twitter.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</div>
+	
+										<div class="h-[6vw] w-[6vw] sm:h-[4.5vw] sm:w-[5vw] xl:w-[3.5vw] xl:h-[3.5vw] rounded-full bg-zinc-800 flex justify-center items-center">
+											<div class="h-[4vw] w-[4vw] sm:h-[2.5vw] sm:w-[2.5vw] xl:h-[2vw] xl:w-[2vw]">
+												<img src="./assets/img/mail.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+	
+	
+	
+							</div>						
+						</div>
+					</nav>
+				</div>		
+			</section0>
+
+
+
+			<section1 id="beginning">
+				<!-- NAV Narration Display -->
+				<div class="welcomeCont fixed top-[11vh] left-0 w-full justify-center [display:none] z-40">
+					<div class="ml-[1.5vw] w-[30vw] min-h-[12vh] h-[12vh] flex justify-around items-center border-[0.1vw]">
+						<div class="h-[2vw] w-[2vw] mt-[0.5vw]">
+							<img src="./assets/img/logo.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+						</div>
+
+						<div class="welcomex w-[20vw] text-[0.9vw] leading-[1.1vw] uppercase text-center ">
+							<div class="welcomeNav">Welcome to Headborn Studios </div>
+							<div>Enjoy the endless possibilities</div>
+							<div class="noos mt-[0.5vw]">H.B.S</div>
+						</div>
+
+						<div class="h-[2vw] w-[2vw] mt-[0.5vw]">
+							<img src="./assets/img/logo.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+						</div>
+					</div>
+				</div>
+
+				<div class="hmeCont fixed top-[11vh] left-0 w-full [display:none] z-40">					
+						<div class="welcomex ml-[3vw] w-[10vw] text-stone-50 uppercase text-center flex items-center">
+							<div class="h-[2vw] w-[2vw] mr-[1vw]">
+								<img src="./assets/img/rightArrow.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+							</div>
+							<div class="welcomeNav text-[1.1vw]">Home</div>
+						</div>	
+				</div>
+
+				<div class="navContt fixed top-[11vh] right-[2vw] [display:none] z-40">
+					<div class="h-[14vw] w-[24vw]">
+						<img src="./assets/img/nav1.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+					</div>
+				</div>
+
+
+
+
+
+
+				<!-- Body Beginning -->
+
+				<div class="lg:h-screen pt-[20vw] sm:pt-[12vw] lg:pt-[9vw] xl:pt-[5vw]">
+					<div class="lg:flex justify-between h-full">
+						<!-- First row Images for Large Screen -->
+						<div class="[display:none] lg:flex h-full flex-col ">
+							<div class="min-h-[25.5vw] h-[25.5vw] w-[21vw] ml-[6vw] mb-[4vw]">
+								<img src="./assets/img/Johnny/john.jpg" class="h-full w-full object-cover  brightness-[60%] grayscale" alt=”Image”>
+							</div>
+
+							<div class="flex items-end flex-1 mb-[10vw]">
+								<div class="min-h-[19.5vw] h-[19.5vw] w-[15vw] ml-[3vw]">
+									<img src="./assets/img/bayanni/bayanni1.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="centerPiece lg:flex items-center lg:mt-[6vw lg:ml-[2.5vw]">
+							<div>
+							<!-- Upper Images Small Screen -->
+							<div class="lg:[display:none] flex justify-between mb-[15vw] sm:mb-[7vw] px-[5.5vw]">
+								<div class="min-h-[22vw] h-[22vw] w-[15vw] ml-[4vw]">
+									<img src="./assets/img/Johnny/john.jpg" class="h-full w-full object-cover brightness-[60%] grayscale" alt=”Image”>
+								</div>
+
+								<div class="min-h-[31.1vw] h-[31.1vw] w-[25vw]">
+									<img src="./assets/img/prettyboydo/prettyboydo2.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
+								</div>
+							</div>
+
+
+
+							<div class="flex justify-center lg:block">
+							<div>
+								<div class="about text-center text-[8vw] leading-[8vw] sm:text-[30px] sm:leading-[30px] xl:text-[3vw] xl:leading-[3vw] mb-[1.5vw] sm:mb-[1vw] xl:mb-[0.5vw] text-stone-300">ALL ABOUT</div>
+								<hr class="border-stone-600 border-[0.1vw] xl:border-[0.05vw]">
+								
+								<div class="text-center mt-[2.5vw] sm:mt-[1.7vw] xl:mt-[1vw]">
+									<h1 class="one text-[3vw] leading-[3vw] sm:text-[13px] sm:leading-[13px] xl:text-[1vw] xl:leading-[1vw]">(001)</h1>
+									<div class="justify-center items-center mt-[8vw] sm:mt-[5vw] xl:mt-[3.5vw]">
+										<div class="hbb text-[14vw] leading-[14vw] sm:text-[60px] sm:leading-[60px] xl:text-[6vw] xl:leading-[5.8vw] uppercase">
+											<h1>Headborn</h1>
+											<p>Studios</p>
+										</div>
+									</div>
+
+									<div class="flex justify-center items-center mt-[5vw] sm:mt-[3.5vw] xl:mt-[2.5vw]">
+										<div class="styleGen">
+											<div class="flex justify-center">
+												<div class="h-[11vw] w-[11vw] sm:h-[55px] sm:w-[55px] xl:h-[4vw] xl:w-[4vw]">
+													<img src="./assets/img/roll1.png" class="h-full w-full object-contain" alt=”brand”>
+												</div>
+											</div>
+											
+											<div class="flex flex-col justify-center items-center">
+												<p class="mt-[3vw] sm:mt-[2vw] xl:mt-[1vw] uppercase text-[5vw] leading-[5vw] sm:text-[30px] sm:leading-[30px] xl:text-[2.3vw] xl:leading-[2.3vw] text-stone-400">Styling Geniuses</p>
+												<p class="stylG mt-[3vw] sm:mt-[2vw] xl:mt-[1vw] uppercase text-[2.7vw] leading-[2.9vw] sm:text-[17px] sm:leading-[18px] xl:text-[1.1vw] xl:leading-[1.1vw] w-[30vw] xl:w-[13vw] text-stone-700">Enter the realm of the styling Geniuses</p>
+											</div>
+										</div>
+									</div>									
+								</div>
+
+			
+								<div class="mt-[3vw] xl:mt-[1vw]">
+									<div class="flex justify-between items-center border-t-[0.1vw] border-b-[1vw] sm:border-b-[0.5vw] xl:border-b-[0.4vw] border-stone-200 py-[2.5vw] sm:py-[1.3vw] xl:py-[0.5vw]">
+										<div class="view text-[4.5vw] leading-[4.5vw] sm:text-[18px] sm:leading-[18px] xl:text-[1.3vw] xl:leading-[1.3vw]">VIEW WORKS</div>
+
+										<div class="h-[4vw] w-[10vw] lg:w-[7vw] xl:h-[2vw] xl:w-[4vw] mr-[0.5vw]">
+											<img src="./assets/img/longArrow.png" class="h-full w-full object-contain" alt=”brand”>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+
+
+							<!-- Lower Images Small Screen -->
+							<div class="lg:[display:none] flex justify-between items-end mt-[10vw]">
+								<div class="min-h-[50vw] h-[50vw] w-[33vw]">
+									<img src="./assets/img/bayanni/bayanni1.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
+								</div>
+
+								<div class="min-h-[28vw] h-[28vw] w-[20vw] mr-[9vw]">
+									<img src="./assets/img/im7.jpg" class="h-full w-full object-cover brightness-[60%] grayscale" alt=”Image”>
+								</div>
+							</div>
+							</div>
+						</div>
+
+
+
+						<!-- Second row Images for Large Screen -->
+						<div class="[display:none] lg:flex flex-col">
+							<div class="min-h-[16vw] h-[1vw] w-[12vw] xl:min-h-[13vw] xl:h-[13vw] xl:w-[10vw] ml-[3vw] mb-[5vw]">
+								<img src="./assets/img/prettyboydo/prettyboydo2.jpg" class="h-full w-full object-cover brightness-[60%]" alt=”Image”>
+							</div>
+
+							<div class="flex items-end flex-1 mb-[15vw]">
+								<div class="min-h-[32.3vw] h-[32.3vw] w-[28vw]">
+									<img src="./assets/img/im7.jpg" class="h-full w-full object-cover brightness-[60%] grayscale" alt=”Image”>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section1>
+
+
+
+
+
+
+			<section2>
+				<div class="overflow-hidden">
+					<div class="sec2 pt-[10vw] md:pt-0 lg:pt-[10vw] px-[2vw] text-white">
+
+							<!-- Small Screen -->
+						<div class="flex justify-center z-10 lg:[display:none] mb-[15vw]">
+							<div class="circle mt-[5vw] sm:mt-[20vw] md:mt-[15vw] ml-[3vw] relative flex justify-center items-start xl:[display:none]">
+								<div class="circleTextAnim cursor-pointer">
+									<h1 class="myElement text-[11px] xs:text-[5vw] sm:text-[28px]" id="myElement2"> * HB STUDIOS * GET IN TOUCH * GET IN TOUCH * HB STUDIOS * GET IN TOUCH</h1>
+								</div>
+
+
+								<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20">
+									<div class="h-[9vw] w-[9vw] sm:h-[8vw] sm:w-[9vw]">
+										<img src="./assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”rightArrow”>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="sec2Anim relative w-full h-full">
+							<div>
+							<div class="cse text-[14vw] leading-[14vw] uppercase relative">
+								<div class="text-center">Creative</div>
+								<div class="studio1 mt-[1.2vw]">Studio</div>
+								<div class="text-center mt-[2.5vw]">Evolution</div>
+							</div>
+							</div>
+
+
+							<!-- Large Screen Circle -->
+							<div class="absolute right-[20vw] bottom-[12vw] z-10 [display:none] lg:block">
+								<div class="circle relative mt-[32vw] ml-[3vw] flex justify-center items-start">
+									<div class="circleTextAnim cursor-pointer">
+										<h1 class="text-[1.65vw]" id="myElement3"> * HB STUDIOS * GET IN TOUCH * GET IN TOUCH * HB STUDIOS * GET IN TOUCH</h1>
+									</div>
+			
+									<div class="absolute h-full w-full top-0 left-0 flex justify-center items-center z-20">
+										<div class="h-[3vw] w-[3vw]">
+											<img src="./assets/img/rightArrow1.png" class="h-full w-full object-contain" alt=”rightArrow”>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="absolute bottom-[18vw] lg:bottom-[22vw] left-[38vw] text-stone-200">
+								<div class="elevate text-[2.5vw] leading-[2.7vw] lg:text-[1vw] lg:leading-[1.2vw] w-[40vw] lg:w-[20vw]">
+									Elevating Artiste Image and Branding, unlocking visual Potentials: Introducing HEADBORN STUDIOS.
+								</div>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</section2>
+
+
+
+
+
+
+			<section3>
+				<div class="mt-[15vw] md:mt-[15vw] xl:mt-0">
+
+					<div class="flex justify-center relative overflow-hidden">
+						<div class='iframeCont1 h-auto xl:h-screen w-[50vw]'>							
+							<iframe src="https://player.vimeo.com/video/891064567?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[60%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="memorable-brand uppercase absolute bottom-[8vw] left-0">
+							<div class="craft1 flex items-center w-[300vw] text-[5vw] leading-[5vw]">
+								<div class="mr-[1vw]">
+									<span class="craft">Craft</span>
+									<span>Memorable Brand*</span>
+								</div>
+
+								<div class="mr-[1vw]">
+									<span class="craft">Craft</span>
+									<span>Memorable Brand*</span>
+								</div>
+
+								<div class="mr-[1vw]">
+									<span class="craft">Craft</span>
+									<span>Memorable Brand*</span>
+								</div>
+							</div>
+
+
+							<div class="lasting flex items-center w-[300vw] text-[5vw] leading-[5vw]">
+								<div class="mr-[1vw]">
+									<span class="leave">Leave</span>
+									<span>Lasting Impression*</span>
+								</div>
+
+								<div class="mr-[1vw]">
+									<span class="leave">Leave</span>
+									<span>Lasting Impression*</span>
+								</div>
+
+								<div class="mr-[1vw]">
+									<span class="leave">Leave</span>
+									<span>Lasting Impression*</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+
+
+
+					<div class="px-[5vw] lg:px-0 mb-[25vw] md:mb-[15vw] xl:mb-[8vw] mt-[15vw] xl:mt-[4vw]">
+						<div class="md:flex justify-center">
+							<div class="a-vision text-[2.3vw] leading-[2.3vw] sm:text-[15px] sm:leading-[15.5px] md:text-[1.3vw] md:leading-[1.5vw] uppercase md:text-center w-[24vw] md:w-[30vw md:w-[19vw]">
+								A Vision Beyond Ordinary Image Consulting
+							</div>
+						</div>
+
+
+						<div class="subHead half-decade md:flex justify-center mt-[6vw] lg:mt-[4vw]">
+							<div class="md:text-center text-[6vw] leading-[7vw] md:text-[30px] md:leading-[36px] xl:text-[3.2vw] xl:leading-[3.7vw] md:w-[60vw] lg:w-[50vw] xl:w-[44vw]">
+								Half a decade experience as independent creative professionals.
+							</div>
+						</div>
+
+						<div class="subBody we-craft md:flex justify-center mt-[9vw] xl:mt-[7vw]">
+							<div class="md:text-center text-[15px] leading-6 sm:leading-7 md:text-[12px] md:leading-[18px] xl:text-[1.1vw] xl:leading-normal  md:w-[40vw] lg:w-[35vw] xl:w-[33vw] text-stone-300">
+								<p>
+									We craft a distinctive stage presence that elevates your performance, ensuring a memorable 
+									impact on both fans and industry insiders. By fusing worldwide fashion trends with the essence 
+									of Afrobeats, we craft an exceptional and cross-cultural aesthetic that deeply connects with global 
+									audiences. Our approach seamlessly incorporates fashion and style that harmonizes with your unique 
+									vision for music videos and content, reinforcing and amplifying your brand identity visually. 
+									Our ultimate goal is to empower artists, transforming them into self-assured, iconic figures poised 
+									to conquer the global stage. Drawing inspiration from the rich cultural heritage of Afrobeats, 
+									we curate a forward-thinking fashion identity that authentically reflects your roots and artistic 
+									journey.
+								</p>
+
+								<p class="mt-[4vw] xl:mt-[2vw]">
+									Our proficiency extends well beyond mere fashion guidance. We offer a holistic approach encompassing 
+									image coaching, wardrobe enhancements, color analysis, and tailor-made branding strategies. 
+									We meticulously construct a memorable brand that makes an indelible mark on your audience, seamlessly 
+									aligning with your musical essence and creative vision.
+								</p>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="px-[5vw] xl:px-[2vw] mb-[20vw] lg:mb-[17vw] xl:mb-[7.5vw]">
+						<div class="flex items-end xl:items-center justify-center relative">
+
+
+							<!-- Small Swiper -->
+							<div class="swiper swiper1 mySwiper mr-[6vw]">
+								<div class="swiper-wrapper brightness-[70%] w-full h-full grayscal">
+								  <div class="swiper-slide grayscale">
+									<img src="./assets/img/nezAndCos/img10.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img4.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img5.jpg" alt=”images”>
+								  </div>
+								  
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img7.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img8.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img2.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img9.jpg" alt=”images”>
+								  </div>
+								</div>
+								<!-- <div class="swiper-pagination"></div>
+								<div class="autoplay-progress">
+									<svg viewBox="0 0 48 48">
+									  <circle cx="24" cy="24" r="20"></circle>
+									</svg>
+									<span></span>
+								</div> -->
+							</div>
+
+
+
+
+
+
+
+							<!-- Big Swiper -->
+							<div class="swiper swiper2 mySwiper mr-[3vw]">
+								<div class="swiper-wrapper brightness-[50%] w-full h-full grayscal">
+								  <div class="swiper-slide grayscale">
+									<img src="./assets/img/nezAndCos/img10.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img4.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img5.jpg" alt=”images”>
+								  </div>
+								  
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img7.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img8.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img2.jpg" alt=”images”>
+								  </div>
+
+								  <div class="swiper-slide">
+									<img src="./assets/img/nezAndCos/img9.jpg" alt=”images”>
+								  </div>
+								</div>
+								<div class="swiper-pagination"></div>
+								<div class="autoplay-progress">
+									<svg viewBox="0 0 48 48">
+									  <circle cx="24" cy="24" r="20"></circle>
+									</svg>
+									<span></span>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- Logo -->
+						<div class="h-[8.5vw] w-[8.5vw] xl:h-[6.5vw] xl:w-[6.5vw] mt-[15vw] xl:mt-0">
+							<img src="./assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+						</div>
+
+						<!-- Introducing Headborn Studios -->
+						<div class="mt-[2vw]">
+							<div class="intro text-[10vw] leading-[10vw] xl:text-[6vw] xl:leading-[6vw] uppercase mr-[4vw] w-[50vw] xl:w-[43vw]">
+								<h1>Introducing Headborn Studios</h1>
+							</div>
+							
+
+							<div class=" mt-[5vw] xl:mt-[2vw]">
+								<div class="xl:flex justify-end w-[42vw]">
+									<div class="h-[7vw] w-[7vw] xl:h-[3.5vw] xl:w-[3.5vw]">
+										<img src="./assets/img/arrow2.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="xl:flex justify-end mb-[20vw] md:mb-[10vw] lg:mb-[6vw] xl:mr-[18vw] mt-[10vw] xl:mt-[6vw]">
+							<div class="flex flex-col xl:justify-center xl:items-center">
+								<div class="subHead text-[6vw] leading-[7vw] md:text-[30px] md:leading-[36px] xl:text-[3.6vw] xl:leading-[4.2vw] w-[60vw] xl:w-[40vw]">
+									<div class="relative subHeader xl:text-center wHb" id="welcomeToHb">Welcome to Headborn Studios</div>	
+								</div>
+	
+	
+								<div class="subBody mt-[3vw] lg:mt-[1.5vw] xl:mt-[3vw]">
+									<div class="xl:text-center leading-6 text-[15px] sm:leading-7 md:text-[12px] md:leading-[18px] xl:text-[1.1vw] xl:leading-normal w-[70vw] sm:w-[60vw] xl:w-[27vw] text-stone-300">
+										A trailblazing creative hub based in Lagos, Nigeria. 
+										We are a dynamic and innovative duo with a passion for Image Consulting and Fashion & Style Direction.
+										Our mission is to empower artists and brands to create continuous visual stories that resonates around 
+										fashion and lifestyle globally.
+									</div>
+								</div>
+							</div>
+						</div>	
+
+
+						<div>
+							<div class="xl:flex items-center">
+								<!-- Video Small Screen -->
+								<div class='iframeCont h-auto w-full xl:h-[70vh] xl:min-h-[70vh] xl:w-[70vw] xl:[display:none] mb-[15vw] md:mb-[10vw] lg:mb-[6vw]'>
+									<iframe src="https://player.vimeo.com/video/891065519?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+								</div>
+
+								<div>
+									<div>
+										<div class="subHead text-[6vw] leading-[7vw] md:text-[30px] md:leading-[36px] xl:text-[3.6vw] xl:leading-[4.2vw] w-[50vw] lg:w-[35vw]">
+											<div class="relative choose subHeader" id="chooseUs">Why choose us?</div>
+										</div>
+		
+										<div class="subBody mt-[3vw] lg:mt-[1.5vw] xl:mt-[3vw]">
+											<div class="leading-6 text-[15px] sm:leading-6 md:text-[12px] md:leading-[18px] xl:text-[1.1vw] xl:leading-normal w-[75vw] sm:w-[55vw] md:w-[40vw] lg:w-[30vw] text-stone-300">
+												Our team comprises industry authorities with a deep comprehension of the Afrobeats 
+												genre and its global music trajectory. We boast a well-established history of propelling 
+												brands to attain notable recognitions, as exemplified by our successful partnership with PITH AFRICA.
+												our team's expertise, proven success, dedication to artistic excellence, and commitment to amplifying 
+												cultural voices collectively underscore our capacity to make a tangible impact in the music and branding 
+												industry. This impact is not only reflected in increased sales and brand recognition but also in our broader 
+												mission to contribute to the broader cultural narrative. 
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Video Large Screen -->
+								<div class='iframeCont h-auto xl:h-[70vh] xl:min-h-[70vh] w-[70vw] [display:none] xl:block'>
+									<iframe src="https://player.vimeo.com/video/891065519?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;showinfo=0&amp;is_iframe=true&amp;loop=1&amp;controls=0" class='aspect-video h-full w-full brightness-[50%] grayscal' frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</section3>
+
+
+			<section4>
+				<div class="mb-[25vw] lg:mb-[20vw] xl:mb-[15vw]">
+					<div class="mainBio">
+						<div class="profile-container border-y-[0.05vw] border-stone-700 py-[3vw] cursor-pointer">
+							<div class="flex justify-between items-center px-[5vw] xl:px-0 xl:block">
+								<div class="pro1 profile xl:flex justify-around items-center">
+									<!-- Plus Image Large Screen -->
+									<div class="plus">
+										<div class="h-[2.5vw] w-[2.5vw] [display:none] xl:block">
+											<img src="./assets/img/plus.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+										</div>
+									</div>
+
+									<div class="name flex items-center text-[8.5vw] leading-[8.5vw] lg:text-[6.5vw] lg:leading-[6.5vw] xl:text-[5vw] lg: :leading-[5vw] uppercase">
+										<div class="first-name mr-[2.5vw] xl:mr-[1.5vw]">Nez</div>
+										<div class="last-name">Anazodo</div>
+									</div>
+
+									<div class="mt-[2.5vw] xl:mt-0">
+										<div class="position text-[13px] leading-[13.5px] sm:text-[15px] sm:leading-[15.5px] lg:text-[20px] lg:leading-[20.5px] xl:text-[1.3vw] xl:leading-[1.3vw]">Creative Director & Image Consultant</div>
+									</div>
+								</div>
+
+
+								<!-- Plus Image Small Screen -->
+								<div class="h-[5vw] w-[5vw] xl:[display:none]">
+									<img src="./assets/img/plus.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+								</div>
+							</div>
+
+
+							<!-- Hover Image -->
+							<div class="bio-img1 min-h-[40vh] h-[40vh] w-[15vw] z-[10000000] rounded-full [display:none] lg:block">
+								<img src="./assets/img/nezAndCos/img1.jpg" class="h-full w-full object-cover rounded-full brightness-50 sepia" alt=”Image”>
+							</div>
+						</div>
+
+
+						<div>
+							<div class="bio-container lg:flex items-center justify-around py-[1.3vw pr-[5vw] bg-stone-200">
+								<div class="mr-[3vw">
+									<div class="h-[5vw] w-[5vw] lg:h-[3vw] lg:w-[3vw]">
+										<img src="./assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+
+								<div>
+									<div class="bio text-[16px] leading-[22px] xl:text-[1.1vw] xl:leading-normal text-black w-full lg:w-[65vw] xl:w-[50vw] xl:text-justify py-[3vw] xl:py-0">
+										An inspired creative director and image consultant passionate about crafting innovative 
+										narratives at the crossroads of fashion and culture. My morals revolves around reshaping 
+										fashion perspectives as fashion products by seamlessly blending individuality, lifestyle, 
+										beauty, cultural and contemporary symbolism, and human relations into captivating brand 
+										stories that can also be translated into organic growth.
+									</div>
+								</div>
+
+								<div class="ml-[3vw">
+									<div class="h-[5vw] w-[5vw] lg:h-[3vw] lg:w-[3vw]">
+										<img src="./assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="mainBio">
+						<div class="profile-container1 border-y-[0.05vw] border-stone-700 py-[3vw] cursor-pointer">
+							<div class="flex justify-between items-center px-[5vw] xl:px-0 xl:block">
+								<div class="pro2 profile xl:flex justify-around items-center">
+									<!-- Plus Image Large Screen -->
+									<div>
+										<div class="h-[2.5vw] w-[2.5vw] [display:none] xl:block">
+											<img src="./assets/img/plus.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+										</div>
+									</div>
+
+									<div class="name flex items-center text-[8.5vw] leading-[8.5vw] lg:text-[6.5vw] lg:leading-[6.5vw] xl:text-[5vw] xl:leading-[5vw] uppercase">
+										<div class="first-name mr-[2.5vw] xl:mr-[1.5vw]">Cosmos</div>
+										<div class="last-name">Ojeme</div>
+									</div>
+
+									<div class="mt-[2.5vw] xl:mt-0">
+										<div class="position text-[13px] leading-[13.5px] sm:text-[15px] sm:leading-[15.5px] lg:text-[20px] lg:leading-[20.5px] xl:text-[1.3vw] xl:leading-[1.3vw]">Creative Director & Strategist</div>
+									</div>
+								</div>
+
+								<!-- Plus Image Small Screen -->
+								<div class="h-[5vw] w-[5vw] xl:[display:none]">
+									<img src="./assets/img/plus.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+								</div>
+							</div>
+
+							<!-- Hover Image -->
+							<div class="bio-img2 min-h-[40vh] h-[40vh] w-[15vw] z-[10000000] rounded-full [display:none] lg:block">
+								<img src="./assets/img/nezAndCos/img6.jpg" class="h-full w-full object-cover rounded-full brightness-50 sepia" alt=”Image”>
+							</div>
+						</div>
+
+
+						<div>
+							<div class="bio-container1 lg:flex lg:items-center lg:justify-around py-[1.3vw] pr-[5vw] bg-stone-200">
+								<div class="mr-[3vw">
+									<div class="h-[5vw] w-[5vw] lg:h-[3vw] lg:w-[3vw]">
+										<img src="./assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+
+								<div>
+									<div class="bio text-[16px] leading-[22px] xl:text-[1.1vw] xl:leading-normal text-black w-full lg:w-[65vw] xl:w-[50vw] xl:text-justify py-[3vw] xl:py-0">
+										A value-oriented creative-director and strategist, passionate about brand management and 
+										business growth with years of experience ideating, creating and marketing fashion products and 
+										immersive experiences. I love the process of creating and reiterative learning and I am committed 
+										to telling unique brand stories, building strong communities and generating revenue.
+									</div>
+								</div>
+
+								<div class="ml-[3vw">
+									<div class="h-[5vw] w-[5vw] lg:h-[3vw] lg:w-[3vw]">
+										<img src="./assets/img/logo.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section4>
+
+
+
+			<section5>
+				<div>
+					<div class="flex justify-center items-center mb-[20vw] xl:mb-[5vw]">
+						<a href="tel:+2349032570511">
+							<div class="callToAction-container uppercase xl:text-center">
+								<div class="callToAction text-[9vw] leading-[9.1vw]">
+									<div class="create text-[8vw] leading-[8.1vw]">Let's Create</div>
+									<div>Something Great</div>
+									<div>Together</div>
+								</div>
+
+								<div class="fle justify-center xl:block">
+									<div class="callToAction1 text-[11px] leading-[13px] sm:text-[13px] sm:leading-[15px] lg:text-[20px] lg:leading-[22px] xl:text-[1.5vw] xl:leading-[1.5vw] mt-[4.5vw] xl:mt-[4vw] w-[50vw] xl:w-full capitalize">Get in touch and let's bring your vision to life</div>
+								</div>
+							</div>
+						</a>
+
+
+						<div class="emoji min-h-[25vh] h-[25vh] w-[14vw] z-[10000000]">
+							<img src="./assets/img/emoji.png" class="h-full w-full object-contain brightness-[60% grayscale" alt=”Image”>
+						</div>
+					</div>
+
+
+					<div class="flex justify-end mb-0 xl:mb-[7vw] mr-[2vw]">
+						<a href="/public/index.html#swiperSec">
+							<div class="mr-[3vw]">
+								<div class="viewProject rounded-full h-[40vw] w-[40vw] md:h-[30vw] md:w-[30vw] lg:h-[25vw] lg:w-[25vw] xl:h-[11vw] xl:w-[11vw] text-center uppercase flex justify-around items-center text-[3vw] leading-[3.1vw] md:text-[2vw] md:leading-[2.1vw] xl:text-[1vw] xl:leading-[1vw] animate-bounce hover:animate-none">
+									
+									<div class="h-[4vw] w-[8vw] md:h-[2.5vw] md:w-[5vw] xl:h-[1.5vw] xl:w-[2vw]">
+										<img src="./assets/img/longArrow1.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+	
+									<div>
+										<div>View</div>
+										<div>Projects</div>
+									</div>
+	
+									<div class="h-[4vw] w-[8vw] md:h-[2.5vw] md:w-[5vw] xl:h-[1.5vw] xl:w-[2vw]">
+										<img src="./assets/img/longArrow.png" class="h-full w-full object-contain" alt=”brand”>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section5>
+
+
+
+
+
+
+
+
+
+
+
+				<!-- FOOTER -->
+				<div class="footer px-[2vw]">
+					<div>
+						<div class="hbs1 text-[12.5vw] leading-[12vw] uppercase mt-[5vw] sm:mt-[10vw] xl:mt-[3vw] text-center lg:block">
+							HeadB0rn Studios*
+						</div>
+					</div>
+
+					<div class="footer-nav mt-[20vw] sm:mt-[2vw] text-white">
+									
+						<!-- Small Screen -->
+						<div class="sm:[display:none] mb-[20vw]">
+							<div class="h-[11vw] w-[11vw] mb-[6vw]">
+								<img src="/assets/img/hbLogo.jpg" class="h-full w-full object-contain" alt=”left-down arrow”>
+							</div>
+
+							<div class="newsLet text-[5vw] leading-[6vw] w-[80vw] uppercase">
+								<h1>Subscribe to the HB STUDIOS® newsletter to stay up-to-date with the latest releases</h1>          
+							</div>
+
+
+							<div class="mt-[7vw] border-b-[0.3vw] border-white w-[80vw] flex justify-between items-center">
+								<input type="email" name="Email Address" id="newsLetterEmail" placeholder="Email Address" class="newsLet1 w-[60vw] bg-transparent py-[0.4vw] text-[3.5vw] uppercase outline-none">
+
+								<div class="h-[12vw] w-[12vw] submitEmail1" id="submitEmail1">
+									<img src="/assets/img/longArrow.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- Large Screen -->
+						<div class="[display:none] sm:block mb-[3vw] ml-[1vw]">
+							<div class="flex items-center">
+								<div class="h-[4vw] w-[4vw] mb-[2vw] mr-[2vw]">
+									<img src="/assets/img/hbLogo.jpg" class="h-full w-full object-contain" alt=”left-down arrow”>
+								</div>
+
+								<div class="inputCont relative w-[35vw] h-[3.65vw] mr-[1vw]">
+									<input type="email" id="newsLetterEmail1" name="Email Address" placeholder="Enter your Email to Subscribe to our Newsletter" class="newsLet1 h-full w-full border-white border-[0.1vw] bg-transparent px-[1vw] text-[1.2vw] uppercase outline-none">
+								</div>
+
+								<div id="submitEmail" class="submitEmail h-[4vw] w-[4vw] flex justify-center items-center">
+									<img src="/assets/img/cArrow.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="sm:flex justify-around items-center text-[12.5px] sm:text-[1.5vw] lg:text-[1.1vw] uppercase">
+							<div class="w-[20vw] lg:w-[5vw]">
+								<a href="/about.html" data-text="about">
+									<div>About</div>
+								</a>
+
+								<a href="https://www.instagram.com/headb0rnstudi0s/" aria-label='stories' rel='noopener' target='_blank'>
+									<div class="mt-[2.3vw] sm:mt-[1vw] lg:mt-[0.5vw]">Stories</div>
+								</a>
+
+								<a href="/service.html" data-text="service">
+									<div class="mt-[2.3vw] sm:mt-[1vw] lg:mt-[0.5vw]">Services</div>
+								</a>
+
+								<a href="/contact.html" data-text="contact">
+									<div class="mt-[2.3vw] sm:mt-[1vw] lg:mt-[0.5vw]">Contact</div>
+								</a>
+							</div>
+
+							<div class="mt-[3.3vw] sm:mt-0 [display:none] sm:block">
+								<a href="mailto: hbstudiios@gmail.com? subject= subject text">
+									<div class="mt-[2.3vw] sm:mt-[1vw] lg:mt-[0.5vw]">Email</div>
+								</a>
+
+								<a href="https://www.instagram.com/headb0rnstudi0s/" aria-label='instagram' rel='noopener' target='_blank'>
+									<div class="mt-[1.5vw] sm:mt-[1vw] lg:mt-[0.5vw]">Instagram</div>
+								</a>
+
+								<a href="#">
+									<div class="mt-[1.5vw] sm:mt-[1vw] lg:mt-[0.5vw]">Twitter</div>
+								</a>
+							</div>
+
+							<div class="mt-[12vw] sm:[display:none]">
+								<div class="flex justify-between items-center w-[40vw]">
+									<div class="w-[7vw] h-[7vw] rounded-full bg-zinc-800 flex justify-center items-center">
+										<a href="https://www.instagram.com/headb0rnstudi0s/" aria-label='instagram' rel='noopener' target='_blank'>
+											<div class="h-[5vw] w-[5vw] md:h-[3vw] md:w-[3vw]">
+												<img src="./assets/img/instagtam.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</a>
+									</div>
+
+									<div class="w-[7vw] h-[7vw] rounded-full bg-zinc-800 flex justify-center items-center">
+										<a href="#">
+											<div class="h-[5vw] w-[5vw] md:h-[3vw] md:w-[3vw]">
+												<img src="./assets/img/twitter.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</a>
+									</div>
+									
+									<div class="w-[7vw] h-[7vw] rounded-full bg-zinc-800 flex justify-center items-center">
+										<a href="mailto: hbstudiios@gmail.com? subject= subject text">
+											<div class="h-[5vw] w-[5vw] md:h-[3vw] md:w-[3vw]">
+												<img src="./assets/img/mail.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					
+					<div class="flex justify-between items-end sm:block">
+						<!-- Small Screen -->
+						<div class="madeBy text-[14px] leading-[14px] sm:text-[16px] uppercase sm:[display:none] text-whit">
+							<h1>Made by The Clan Chief</h1>
+						</div>
+
+
+						<div class="flex mt-[6vw] sm:mt-[4vw] xl:mt-[3vw] sm:px-[1.7vw]">
+							<div class="sm:flex justify-between items-center w-full">
+								<!-- Large Screen -->
+								<div class="madeBy sm:leading-[14px] sm:text-[16px] xl:text-[1.4vw] uppercase [display:none] sm:block">
+									<div class="flex items-center">
+										<div class="h-[14px] w-[14px] xl:h-[1.3vw] xl:w-[1.3vw] mr-[0.5vw]">
+											<img src="./assets/img/navRoll.png" class="h-full w-full object-contain" alt=”left-down arrow”>
+										</div>
+										<h1>Made by The Clan Chief</h1>
+									</div>
+								</div>
+
+
+
+								<a href="#beginning" data-text="back top">
+									<div class="flex justify-end">
+										<div class="flex items-center justify-center uppercase mt-[1vw] sm:mt-0">
+											<div class="h-[4vw] w-[4vw] sm:h-[2vw] sm:w-[2vw] mr-[1.7vw] sm:mr-[1vw]">
+												<img src="./assets/img/backtop3.png" class="h-full w-full object-cover" alt=”Up arrow”>
+											</div>
+											<h1 class="backTop text-[11.5px] sm:text-[13px] lg:text-[1.3vw] text-white">Back Top</h1>
+										</div>
+									</div>
+								</a>
+
+
+								<div class="text-right text-[10.3px] leading-[10.5px] sm:text-[9px] sm:leading-[9.7px] lg:text-[1.1vw] lg:leading-[1.4vw] mt-[10vw] sm:mt-0">
+									<span class='text-[2.6vw] sm:text-[1.6vw] lg:text-[1.2vw]'>©</span>
+									<span>2023 HEADB0RN STUDIOS</span>
+									<div class="uppercase">All Rights Reserved</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				</div>
+		</section>
+	</section>
+
+
+
+
+	<!-- CIRCLE TYPE TEXT CDN -->
+	<script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- Split Type -->
+	<script src="https://unpkg.com/split-type"></script>
+
+	<!-- GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"></script>
+	
+	<!-- Custom Scripts -->
+	<script src="./about/about.js"></script>
+	<script type="module" src="/newsLetter.js"></script>		
+</body>
+</html>

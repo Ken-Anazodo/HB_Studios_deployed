@@ -1,0 +1,648 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body html{
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.inner-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 2vw;
+	height: 2vw;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 3vw;
+	height: 3vw;
+	transform: translate(-50%, -50%);
+	border: 1px solid #fff;
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: 0.1s;
+}
+
+
+/* Navigation  */
+.nav-sec {
+	font-family: 'Poppins', sans-serif; 
+	font-style: normal;
+	font-weight: 500;
+	transition: ease 0.4s;
+}
+
+.navbar{
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Anton', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+.close-icon{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 300;
+}
+
+.menu-num{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.navImage-display1, .navImage-display2, .navImage-display3{	
+		position: fixed;
+		left: 0;
+		pointer-events: none;
+		transition: transform .1s;
+		transform: rotate(45deg);
+		opacity: 0;
+}
+
+.exploreHead{
+	font-family: 'Anton', sans-serif;
+    font-weight: 500;
+}
+
+.exploreBody{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+
+#menu-wrapper{
+	transition: 0.6s;
+}
+
+.menuuu{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.menu-icon{
+	transition: color 0.4s linear;
+}
+
+.hb{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.stu{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 800;
+}
+
+.welcomeCont{
+	/* background-color: black; */
+	mix-blend-mode: difference;
+}
+
+.hBs{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
+.welcomex{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.welcomeNav, .noos{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
+
+.artisteName{
+	font-family: 'Anton', sans-serif;
+	font-weight: 500;
+	font-size: 29vw;
+	line-height: 29vw;
+}
+
+.emoji{
+	position: fixed;
+	left: 0;
+	pointer-events: none;
+	transition: transform .1s;
+	transform: rotate(45deg);
+	opacity: 0;
+}
+
+.no1{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+}
+
+.ta{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 700;
+	font-size: 4.8vw;
+	line-height: 4.8vw;
+}
+
+.film1{
+	font-family: 'Poppins', sans-serif; 
+	/* font-style: italic; */
+	font-weight: 300;  
+	margin-top: 1.3vw;
+}
+
+.creditContainer{
+	width: 100%;
+}
+
+.credit{
+	font-family: 'Anton', sans-serif;
+	font-weight: 600;
+}
+
+.credit-subhead{
+	font-weight: 200;
+	font-family: 'Poppins', sans-serif;
+	/* font-size: 1.5vw; */
+}
+
+.credit-ans{
+	font-weight: 800;
+	font-family: 'Bodoni Moda', serif;
+	/* font-size: 1.5vw; */
+}
+
+.styl-dir{
+	font-family: 'Anton', sans-serif;
+}
+
+.subHead{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.subBody{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.ourVisionHead{
+	margin-top: 12vw;
+}
+
+.visionChild{
+	margin-top: 10vw;
+}
+
+.blackWhite1{
+	margin-top: 47vw;
+}
+
+.blackWhite1, .blackWhite3{
+	height: 22vw;
+	min-height: 22vw;
+	width: 19vw;
+}
+
+.blackWhite2{
+	height: 70vw;
+	min-height: 70vw;
+	width: 45vw;
+}
+
+.integrate{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+	font-size: 7vw;
+	line-height: 7.5vw;
+}
+
+.n{
+	font-family: 'Bodoni Moda', serif;
+	font-size: 5.5vw;
+}
+
+.orangeBtnCont1{
+	margin-top: 10vw;
+}
+
+.btn-orange{
+	border-radius: 30vw;
+	border-color: #fff;
+	border-width: 0.2vw;
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+	padding: 0.7vw 1.5vw;
+}
+
+.btn-orange:hover{
+	background-color: rgb(234 88 12);
+	border-width: 0;
+	color: black;
+	font-weight: 400;
+}
+
+.singImg{
+	height: 80vw;
+	min-height: 80vw;
+	width: 65vw;
+}
+
+.sd, .cd{
+	font-family: 'Anton', sans-serif;
+	font-size: 12vw;
+	line-height: 12.5vw;
+}
+
+.cdCont{
+	margin-top: 17vw;
+}
+
+.wildSecCont{
+	width: 58vw;
+}
+
+.wildImg{
+	height: 70vw;
+	min-width: 70vw;
+	width: 55vw;
+}
+
+.wild11{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+	/* writing-mode:vertical-rl ; */
+	font-size: 27vw;
+	line-height: 27vw;
+}
+
+.wldLogo{
+	height: 9vw;
+	width: 9vw;
+}
+
+.film{
+	font-family: 'Anton', sans-serif;
+	font-weight: 800;
+}
+
+.heaven-subHead{
+	font-weight: 700;
+}
+
+.subHead-no{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 500;
+}
+
+.next{
+	font-family: 'Anton', sans-serif;
+	font-weight: 500;
+}
+
+.boldAndCon{
+	font-family: 'Anton', sans-serif;
+	font-weight: 500;
+	line-height: 22vw;
+	font-size: 22vw;
+	margin-top: 10vw;
+}
+
+.slash{
+	position: absolute;
+	top: 8vw;
+	right: 0;
+	height: 2.2vw;
+	top: 7vw;
+	opacity: 80%;
+	background-color: rgb(195, 130, 8);
+}
+
+.slash1{
+	width: 45vw;
+}
+
+.slash2{
+	width: 90vw;
+} 
+
+ .rel{
+	position: relative;
+ }
+
+/* .circle{
+	border-radius: 50%;
+} */
+
+
+.circleTextAnim{
+	font-family: 'Anton', sans-serif;
+	font-weight: 600;
+	animation: anim 7s linear infinite;
+}
+
+@keyframes anim {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.text span{
+	position: absolute;
+	left: 50%;
+	font-size: 1.2em;
+	transform-origin: 0 100px;
+}
+
+
+
+/* Swiper Animation */
+
+.swiper {
+	width: 100%;
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+  }
+
+  .swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 30vw;
+	min-height: 70vh;
+	height: 70vh;
+  }
+
+  .swiper-slide img {
+	display: block;
+  }
+
+
+/* View Projects */
+  .viewProject{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	background-color: rgb(30, 30, 30);
+}
+
+
+
+
+/* FOOTER */
+.hbs1{
+	font-family: 'Anton', sans-serif;
+	font-weight: 800;
+}
+
+.footer-nav{
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.newsLet{
+	font-family: 'Bodoni Moda', serif; 
+    font-weight: 600;
+}
+
+.newsLet1{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.backTop{
+	font-weight: 800;
+}
+
+
+.madeBy{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+}
+
+.nxtPageSec{
+	display: flex;
+	justify-content: end;
+	/* margin-bottom: 2vw; */
+	margin-right: 2vw;
+	margin-top: 20vw;
+}
+
+@media screen and (max-width: 1279px){
+	.swiper-slide {
+		width: 45vw;
+		min-height: 75vw;
+		height: 75vw;
+	  }
+}
+
+@media screen and (max-width: 1024px){
+	.madeBy{
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+	}
+}
+
+@media screen and (max-width: 639px){
+	.btn-orange{
+		padding: 1vw 2vw;
+		margin-top: 2vw;
+	}
+}
+
+
+@media screen and (min-width: 640px){
+	.singImg{
+		width: 60vw;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.visionChild{
+		margin-top: 8vw;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	
+}
+
+@media screen and (min-width: 1280px){
+	.artisteName{
+		font-size: 31vw;
+		line-height: 31vw;
+	}
+
+	.creditContainer{
+		width: 46vw;
+	}
+
+	.credit{
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+
+	.bdr{
+		margin-top: 1vw;
+		margin-bottom: 1vw;
+	}
+
+	.creditBigImg{
+		width: 46vw;
+	}
+
+	.ta{
+		font-size: 2vw;
+		line-height: 2vw;
+	}
+
+	.film1{
+		margin-top: 0.09vw;
+	}
+
+	.ourVisionHead{
+		margin-top: 7vw;
+	}
+
+	.visionHeadArr{
+		width: 46.5vw;
+	}
+
+	.visionChild{
+		margin-top: 5vw;
+	}
+
+	.blackWhite1{
+		margin-top: 24vw;
+	}
+
+	.blackWhite1, .blackWhite3{
+		height: 26vw;
+		min-height: 26vw;
+		width: 22vw;
+	}
+
+	.blackWhite2{
+		height: 50.1vw;
+		min-height: 50.1vw;
+		width: 44vw;
+	}
+
+	.integrate{
+		font-size: 4vw;
+		line-height: 4.5vw;
+		width: 80vw;
+	}
+
+	.n{
+		font-size: 2.5vw;
+	}
+
+	.orangeBtnCont{
+		margin-top: 1vw;
+	}
+
+	.singImg{
+		height: 63vw;
+		min-height: 63vw;
+		width: 53vw;
+	}
+
+	.sd, .cd{
+		font-size: 8vw;
+		line-height: 8.5vw;
+	}
+
+	.wildImg{
+		height: 57vw;
+		min-width: 57vw;
+		width: 27vw;
+	}
+
+	.wild11{
+		font-size: 13vw;
+		line-height: 13vw;
+	}
+
+	.boldAndCon{
+		line-height: 16vw;
+		font-size: 16vw;
+	}
+
+	.slash{
+		height: 1.8vw;
+		top: 7vw;
+	}
+
+	.slash1{
+		width: 40vw;
+	}
+	
+	.slash2{
+		width: 70vw;
+	} 
+
+	.nxtPageSec{
+		margin-top: 3vw;
+	}
+}
+
+
+
+
+/* From Uiverse.io by Fernando-sv */ 
+.loader {
+	border: 4px solid green;
+	border-left-color: transparent;
+	border-radius: 50%;
+  }
+  
+  .loader {
+	border: 4px solid green;
+	border-left-color: transparent;
+	width: 36px;
+	height: 36px;
+  }
+  
+  .loader {
+	border: 4px solid green;
+	border-left-color: transparent;
+	width: 36px;
+	height: 36px;
+	animation: spin89345 1s linear infinite;
+  }
+  
+  @keyframes spin89345 {
+	0% {
+	  transform: rotate(0deg);
+	}
+  
+	100% {
+	  transform: rotate(360deg);
+	}
+  }

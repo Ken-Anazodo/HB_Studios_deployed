@@ -1,0 +1,338 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body html{
+	overflow-x: hidden;
+}
+
+
+/* CURSOR */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.inner-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 2vw;
+	height: 2vw;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor.grow{
+	width: 6vw;
+	height: 6vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.growLink{
+	width: 3vw;
+	height: 3vw;
+	transition: width 0.5s, height 0.5s;
+}
+
+
+.outer-cursor{
+	position: fixed;
+	left: 3vw;
+	width: 3vw;
+	height: 3vw;
+	transform: translate(-50%, -50%);
+	border: 1px solid #fff;
+	background-color: #fff;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: 0.1s;
+}
+
+
+
+/* Navigation  */
+.nav-sec {
+	font-family: 'Poppins', sans-serif; 
+	font-style: normal;
+	font-weight: 500;
+	transition: ease 0.4s;
+}
+
+.navbar{
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Anton', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+.close-icon{
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 300;
+}
+
+.menu-num{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.navImage-display1, .navImage-display2, .navImage-display3{	
+		position: fixed;
+		left: 0;
+		pointer-events: none;
+		transition: transform .1s;
+		transform: rotate(45deg);
+		opacity: 0;
+}
+
+.exploreHead{
+	font-family: 'Anton', sans-serif;
+    font-weight: 500;
+}
+
+.exploreBody{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+
+/* Circle */
+/* .circle{
+	border-radius: 50%;
+
+} */
+
+.circleTextAnim{
+	font-family: 'Anton', sans-serif;
+	font-weight: 600;
+	animation: anim 7s linear infinite;
+}
+
+
+@keyframes anim {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.text span{
+	position: absolute;
+	left: 50%;
+	font-size: 1.3em;
+	transform-origin: 0 100px;
+}
+
+
+
+/* .navigation::after{
+	content: '';
+	height: 0.8vw;
+	width: 0;
+	background:  rgb(202 138 4);
+	background: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: width 0.5s;
+} */
+
+.navigation:hover::after{
+	width: 100%;
+
+}
+
+#menu-wrapper{
+	transition: 0.6s;
+}
+
+.menuuu{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.menu-icon{
+	transition: color 0.4s linear;
+}
+
+.hb{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.stu{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 800;
+}
+
+.hBs{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
+.welcomex{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+}
+
+.welcomeNav, .noos{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 600;
+}
+
+
+
+/* Section 1 */
+.contact{
+	font-family: 'Anton', sans-serif;
+	font-weight: 600;
+}
+
+.contact-child{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+}
+
+.talk{
+	font-family: 'Libre Bodoni', serif;
+	font-weight: 400;
+}
+
+.emoji{
+	position: fixed;
+	left: 0;
+	pointer-events: none;
+	transition: transform .1s;
+	transform: rotate(45deg);
+	opacity: 0;
+}
+
+.hello{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+}
+
+.viewProject{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	background-color: rgb(30, 30, 30);
+}
+
+.proposal{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+
+.btn-orange{
+	border-radius: 30vw;
+	border-color: #fff;
+	border-width: 0.4vw;
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+	/* background-color: rgb(224, 155, 18); */
+	padding: 1.2vw 2vw;
+	margin-top: 2.5vw;
+}
+
+.btn-orange:hover{
+	background-color: rgb(234 88 12);
+	border-width: 0;
+	color: black;
+	font-weight: 400;
+}
+
+
+
+
+/* FOOTER */
+.hbs1{
+	font-family: 'Anton', sans-serif;
+	font-weight: 800;
+}
+
+.footer-nav{
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.newsLet{
+	font-family: 'Bodoni Moda', serif; 
+    font-weight: 400;
+}
+
+.newsLet1{
+	font-family: 'Poppins', sans-serif; 
+    font-weight: 200;
+}
+
+.backTop{
+	font-weight: 800;
+}
+
+.madeBy{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+}
+
+@media all and (max-width: 1024px){
+	.madeBy{
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+	}
+}
+
+@media screen and (max-width: 639px){
+	.btn-orange{
+		padding: 1vw 2vw;
+		margin-top: 2vw;
+	}
+}
+
+
+
+
+
+/* From Uiverse.io by Fernando-sv */ 
+.loader {
+	border: 4px solid green;
+	border-left-color: transparent;
+	border-radius: 50%;
+  }
+  
+  .loader {
+	border: 4px solid green;
+	border-left-color: transparent;
+	width: 36px;
+	height: 36px;
+  }
+  
+  .loader {
+	border: 4px solid green;
+	border-left-color: transparent;
+	width: 36px;
+	height: 36px;
+	animation: spin89345 1s linear infinite;
+  }
+  
+  @keyframes spin89345 {
+	0% {
+	  transform: rotate(0deg);
+	}
+  
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
