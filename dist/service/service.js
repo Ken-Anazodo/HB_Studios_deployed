@@ -170,18 +170,18 @@ menuIcon.addEventListener("mouseover", () => {
 
 // Instantiate `CircleType` with an HTML element.
 // Small Screen
-const circleType = new CircleType(document.getElementById("myElement"));
-circleType.radius();
-circleType.forceHeight();
-circleType.forceWidth(true);
-circleType.refresh();
+// const circleType = new CircleType(document.getElementById("myElement"));
+// circleType.radius();
+// circleType.forceHeight();
+// circleType.forceWidth(true);
+// circleType.refresh();
 
 // Large Screen
-const circleType1 = new CircleType(document.getElementById("myElement1"));
-circleType1.radius();
-circleType1.forceHeight();
-circleType1.forceWidth(true);
-circleType1.refresh();
+// const circleType1 = new CircleType(document.getElementById("myElement1"));
+// circleType1.radius();
+// circleType1.forceHeight();
+// circleType1.forceWidth(true);
+// circleType1.refresh();
 
 // Circle Text in body
 const circleType2 = new CircleType(document.getElementById("myElement2"));
