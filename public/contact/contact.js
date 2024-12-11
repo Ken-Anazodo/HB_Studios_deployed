@@ -144,15 +144,15 @@ navConnect.forEach(navConnect => {
 
 
 // Circle Cursor Change
-circleText.addEventListener("mouseover", () =>{
-	innerCursor.classList.add("grow");
-	outerCursor.classList.add("grow");
-})
+// circleText.addEventListener("mouseover", () =>{
+// 	innerCursor.classList.add("grow");
+// 	outerCursor.classList.add("grow");
+// })
 
-circleText.addEventListener("mouseleave", () =>{
-	innerCursor.classList.remove("grow");
-	outerCursor.classList.remove("grow");
-})
+// circleText.addEventListener("mouseleave", () =>{
+// 	innerCursor.classList.remove("grow");
+// 	outerCursor.classList.remove("grow");
+// })
 
 
 
