@@ -277,117 +277,177 @@ let navChild3 = document.querySelector(".navChild3");
 
 
 
-// About
-navChild1.addEventListener("mouseenter", () => {
-	gsap.to(navImg1, 1, 
-		{ 
-			scale: 1, 
-			opacity: 1, 
-			top: "-5vw", 
-			left: "-5vw", 
-			rotate: 0,
-			ease: Elastic.easeOut.config(1, 0.3) 
-		})
-
-		navImg1.style.display ='block';
-})
-
-navChild1.addEventListener("mousemove", () => {
-	gsap.to(navImg1, 1, 
-		{ 
-			x: mouseX,
-			y: mouseY
-		})
-})
-
-navChild1.addEventListener("mouseleave", () => {
-	gsap.to(navImg1, 0.2, 
-		{ 
-			scale: 0, 
-			opacity: 0, 
-			top: "0.1vw", 
-			left: "-0.5vw", 
-			rotate: 45
-		})
-
-		navImg1.style.display ='none';
-})
+// Define the breakpoint
+const breakpoint = window.matchMedia("(min-width: 1280px)");
 
 
 
-// Service
-navChild2.addEventListener("mouseenter", () => {
-	gsap.to(navImg2, 1, 
-		{ 
-			scale: 1, 
-			opacity: 1, 
-			top: "-5vw", 
-			left: "-5vw", 
-			rotate: 0,
-			ease: Elastic.easeOut.config(1, 0.3) 
-		})
+/////////////////////// About/////////////////////////////////////
+// Event listener Functions for navChild1
+function onMouseEnter1() {
+    gsap.to(navImg1, 1, {
+        scale: 1,
+        opacity: 1,
+        top: "-5vw",
+        left: "-5vw",
+        rotate: 0,
+        ease: Elastic.easeOut.config(1, 0.3)
+    });
+    navImg1.style.display = "block";
+}
 
-		navImg2.style.display ='block';
-})
+function onMouseMove1(event) {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
 
-navChild2.addEventListener("mousemove", () => {
-	gsap.to(navImg2, 1, 
-		{ 
-			x: mouseX,
-			y: mouseY
-		})
-})
+    gsap.to(navImg1, 1, {
+        x: mouseX,
+        y: mouseY
+    });
+}
 
-navChild2.addEventListener("mouseleave", () => {
-	gsap.to(navImg2, 0.2, 
-		{ 
-			scale: 0, 
-			opacity: 0, 
-			top: "0.1vw", 
-			left: "-0.5vw", 
-			rotate: 45
-		})
-
-		navImg2.style.display ='none';
-})
-
+function onMouseLeave1() {
+    gsap.to(navImg1, 0.2, {
+        scale: 0,
+        opacity: 0,
+        top: "0.1vw",
+        left: "-0.5vw",
+        rotate: 45
+    });
+    navImg1.style.display = "none";
+}
 
 
-// Contacts
-navChild3.addEventListener("mouseenter", () => {
-	gsap.to(navImg3, 1, 
-		{ 
-			scale: 1, 
-			opacity: 1, 
-			top: "-5vw", 
-			left: "-5vw", 
-			rotate: 0,
-			ease: Elastic.easeOut.config(1, 0.3) 
-		})
 
-		navImg3.style.display ='block';
-})
+//////////////////// Service///////////////////////////////
 
-navChild3.addEventListener("mousemove", () => {
-	gsap.to(navImg3, 1, 
-		{ 
-			x: mouseX,
-			y: mouseY
-		})
-})
+// Event listener functions for navChild1
+function onMouseEnter2() {
+    gsap.to(navImg2, 1, {
+        scale: 1,
+        opacity: 1,
+        top: "-5vw",
+        left: "-5vw",
+        rotate: 0,
+        ease: Elastic.easeOut.config(1, 0.3)
+    });
 
-navChild3.addEventListener("mouseleave", () => {
-	gsap.to(navImg3, 0.2, 
-		{ 
-			scale: 0, 
-			opacity: 0, 
-			top: "0.1vw", 
-			left: "-0.5vw", 
-			rotate: 45
-		})
+    navImg2.style.display = "block";
+}
 
-		navImg3.style.display ='none';
-})
+function onMouseMove2(event) {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    gsap.to(navImg2, 1, {
+        x: mouseX,
+        y: mouseY
+    });
+}
+
+function onMouseLeave2() {
+    gsap.to(navImg2, 0.2, {
+        scale: 0,
+        opacity: 0,
+        top: "0.1vw",
+        left: "-0.5vw",
+        rotate: 45
+    });
+
+    navImg2.style.display = "none";
+}
+
+
+
+
+//////////////////////////////////// Contacts///////////////////////////
+// Functions for navChild3
+function onMouseEnter3() {
+    gsap.to(navImg3, 1, {
+        scale: 1,
+        opacity: 1,
+        top: "-5vw",
+        left: "-5vw",
+        rotate: 0,
+        ease: Elastic.easeOut.config(1, 0.3)
+    });
+    navImg3.style.display = "block";
+}
+
+function onMouseMove3(event) {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    gsap.to(navImg3, 1, {
+        x: mouseX,
+        y: mouseY
+    });
+}
+
+function onMouseLeave3() {
+    gsap.to(navImg3, 0.2, {
+        scale: 0,
+        opacity: 0,
+        top: "0.1vw",
+        left: "-0.5vw",
+        rotate: 45
+    });
+    navImg3.style.display = "none";
+}
+
+
+
+
+// Function to add event listeners
+function addEventListeners() {
+	navChild1.addEventListener("mouseenter", onMouseEnter1);
+    navChild1.addEventListener("mousemove", onMouseMove1);
+    navChild1.addEventListener("mouseleave", onMouseLeave1);
+
+    navChild2.addEventListener("mouseenter", onMouseEnter2);
+    navChild2.addEventListener("mousemove", onMouseMove2);
+    navChild2.addEventListener("mouseleave", onMouseLeave2);
+
+	navChild3.addEventListener("mouseenter", onMouseEnter3);
+    navChild3.addEventListener("mousemove", onMouseMove3);
+    navChild3.addEventListener("mouseleave", onMouseLeave3);
+}
+
+// Function to remove event listeners
+function removeEventListeners() {
+	navChild1.removeEventListener("mouseenter", onMouseEnter1);
+    navChild1.removeEventListener("mousemove", onMouseMove1);
+    navChild1.removeEventListener("mouseleave", onMouseLeave1);
+
+
+    navChild2.removeEventListener("mouseenter", onMouseEnter2);
+    navChild2.removeEventListener("mousemove", onMouseMove2);
+    navChild2.removeEventListener("mouseleave", onMouseLeave2);
+
+	navChild3.removeEventListener("mouseenter", onMouseEnter3);
+    navChild3.removeEventListener("mousemove", onMouseMove3);
+    navChild3.removeEventListener("mouseleave", onMouseLeave3);
+}
+
+
+
+// Function to handle breakpoints
+function handleBreakpointChange() {
+    if (breakpoint.matches) {
+        // Add event listeners if the screen width is above the breakpoint
+        addEventListeners();
+    } else {
+        // Remove event listeners if the screen width is below the breakpoint
+        removeEventListeners();
+    }
+}
+
+
+// Initial setup
+handleBreakpointChange();
+
+// Re-run breakpoint handling whenever the viewport size changes
+breakpoint.addEventListener("change", handleBreakpointChange);
 
 
 
