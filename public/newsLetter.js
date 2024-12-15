@@ -4,7 +4,7 @@ import config from "./config.js";
 // Large Screen
 const apiKey = config.VITE_SHEETS_DB_API_KEY;
 
-console.log(`Your API Key: ${apiKey}`);
+// console.log(`Your API Key: ${apiKey}`);
 
 const url = "https://sheetdb.io/api/v1/u1wp3v03b9fe8";
 
